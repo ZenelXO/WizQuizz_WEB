@@ -1,0 +1,35 @@
+.title{
+    font-family: 'Harry Potter', sans-serif;  
+    text-align: center;                                    
+}
+
+.title_in_nav{
+    font-family: 'Harry Potter', sans-serif; 
+}
+
+.icono{
+    size: 10px,10px;
+}
+
+.items{
+    float: right;
+    margin-top: 1%;
+}
+
+.navigation{
+    background-color: #D1AFFD;
+    padding: 3%;
+}
+
+.who{
+    text-align: center;
+}
+
+.total{
+    padding-top: 100px;
+    margin: auto;
+}
+
+.info2{
+    float: right;
+}
