@@ -4,9 +4,10 @@
 }
 
 .head{
-    background-color: violet;
+    background-color: #D1AFFD;
     align-items: center;
     padding: 0.5%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .leftnav{
@@ -18,21 +19,21 @@
 
 .titlenav{
     text-decoration: none;
-    font-family: 'Harry Potter', sans-serif; 
+    font-family: 'Harry Potter', sans-serif;
     font-size: 170%;
 }
 
 .buttons {
-    margin-left: 70%;
+    margin-left: 75%;
 }
 
 .button1{
-    width: 150px; 
-    height: 50px; 
-    background-color: #4CAF50;
-    color: white;
+    width: 150px;
+    height: 50px;
+    background-color: #7B2CBF;
+    color: #FFFFFF;
     padding: 14px 20px;
-    margin: 8px 10px; 
+    margin: 8px 10px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -40,7 +41,7 @@
 
 .main h1{
     text-decoration: none;
-    font-family: 'Harry Potter', sans-serif; 
+    font-family: 'Harry Potter', sans-serif;
     font-size: 400%;
     text-align: center;
     margin-top: 3%;
@@ -65,14 +66,14 @@
 .who{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    color: turquoise;
+    color: #73F6D0;
 }
 
 .news{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 30%;
-    color: turquoise;
+    color: #73F6D0;
 }
 
 .newscontent{
@@ -80,7 +81,7 @@
 }
 
 .foot{
-    background-color: black;
+    background-color: #22242A;
     color: white;
     margin-top: 5%;
     bottom: 0;
@@ -90,23 +91,28 @@
 }
 
 .footitem{
-    margin: 8px 30px; 
+    margin: 8px 30px;
 }
 
 .items{
     float: left;
     text-align: center;
-    margin-left: 30%;
+    margin-left: 70%;
     width: 150%;
 }
 
 .items1{
-    
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+.hr {
+    color: #73F6D0;
 }
 
 .items2{
     text-align: center;
-    margin-top: 3%;
+    margin-top: 1%;
 }
 
 .networks a{
