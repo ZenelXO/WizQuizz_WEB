@@ -69,7 +69,17 @@ aside {
 
 aside p, img {
     vertical-align: middle;
-    padding: 5px;
+    padding: 6px;
+}
+
+.filter {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.filter:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 2px rgba(0, 0, 0, 0.2);
+    color: #73F6D0;
 }
 
 .quizzselection {
