@@ -3,6 +3,12 @@
     margin: 0;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 .head {
     top: 0;
     width: 100%;
@@ -40,22 +46,35 @@
     text-shadow: 0 4px rgba(0, 0, 0, 0.2);
 }
 
+.container{
+    flex: 1;
+}
+
 .asidenav{
     background-color: #6E1EB4;
-    width: 10%;
+    width: 12%;
+    height: 100%; 
+    float: left;
+    flex: 1;
 }
 
 .asidenav p{
     color: white;
+    font-family: "Roboto", sans-serif;
     margin-top: 1%;
     margin: 2.5em;
     bottom: 0;
 }
 
-aside{
-    margin-top: 0;
-    padding-top: 0.1%;
-    padding-bottom: 0.1%;
+body{
+    margin-top: 2.8%;
+    display: flex;
+}
+
+.main{
+    background-color: aquamarine;
+    flex: 1;
+    height: 100%;
 }
 
 .buttons {
@@ -88,10 +107,6 @@ aside{
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 }
 
-body{
-    margin-top: 5%;
-}
-
 hr{
     width: 98%;
     margin: 0 auto;
@@ -100,10 +115,17 @@ hr{
     background-color: #73F6D0;
 }
 
+footer{
+    height: 50px; 
+    width:100%; 
+    position:absolute; 
+    bottom:0; 
+    left:0; 
+}
+
 .foot{
     background-color: #22242A;
     color: white;
-    bottom: 0;
     padding: 1%;
     display: flex;
     align-items: center;
