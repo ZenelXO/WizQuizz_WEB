@@ -20,16 +20,6 @@
     align-items: center;
 }
 
-.leftnav i {
-    color: #FFFFFF;
-    text-shadow: 0 2px rgba(0, 0, 0, 0.2);
-}
-
-.leftnav i:hover {
-    color: #73F6D0;
-    text-shadow: 0 4px rgba(0, 0, 0, 0.2);
-}
-
 .header-logo {
     display: flex;
     align-items: center;
@@ -48,6 +38,21 @@
 .titlenav:hover {
     color: #73F6D0;
     text-shadow: 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.asidenav{
+    background-color: #6E1EB4;
+    width: 10%;
+    height: 1000%;
+}
+
+.asidenav p{
+    margin-top: 1%;
+    margin: 2.5em;
+}
+
+aside{
+    padding-top: 0.1%;
 }
 
 .buttons {
@@ -80,53 +85,8 @@
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 }
 
-body {
+body{
     margin-top: 5%;
-}
-
-.main h1{
-    margin-top: 10%;
-    color: #73F6D0;
-    text-decoration: none;
-    font-family: 'Harry Potter', sans-serif;
-    font-size: 130px;
-    text-align: center;
-    text-shadow: 0 3px rgba(0, 0, 0, 0.2);
-}
-
-.content1{
-    padding: 1%;
-    float: left;
-    display: flex;
-    align-items: center;
-    color: black;
-}
-
-.content2{
-    padding: 1%;
-    float: left;
-    display: flex;
-    align-items: center;
-    color: black;
-}
-
-.who{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #73F6D0;
-    text-shadow: 0 2px rgba(0, 0, 0, 0.1);
-}
-
-.news{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 6%;
-    color: #73F6D0;
-    text-shadow: 0 2px rgba(0, 0, 0, 0.1);
-}
-
-.newscontent{
-    margin-top: 1.1%;
 }
 
 hr{
@@ -137,7 +97,7 @@ hr{
     background-color: #73F6D0;
 }
 
-.foot {
+.foot{
     background-color: #22242A;
     color: white;
     bottom: 0;
@@ -147,7 +107,7 @@ hr{
     align-items: center;
 }
 
-.foot hr {
+.foot hr{
     height: 2px;
     background-color: #73F6D0;
 }
