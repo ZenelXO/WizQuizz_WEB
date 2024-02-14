@@ -1,0 +1,201 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.head {
+    top: 0;
+    width: 100%;
+    padding: 5px;
+    position: fixed;
+    align-items: center;
+    background-color: #D1AFFD;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.leftnav{
+    border: none;
+    margin-left: 2.5%;
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.titlenav{
+    color: #FFFFFF;
+    text-shadow: 0 2px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    font-family: 'Harry Potter', sans-serif;
+    margin-top: 15px;
+    font-size: 200%;
+}
+
+.titlenav:hover {
+    color: #73F6D0;
+    text-shadow: 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.container{
+    margin-top: 100px;
+    background-color: white;
+    margin: 10px;
+    height: 80%;
+    padding: 100px;
+}
+
+.finish{
+    font-family: "Roboto Thin", sans-serif;
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    background-color: #7B2CBF;
+    color: #FFFFFF;
+    padding: 14px 20px;
+    margin: 8px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+}
+
+.quizinfo{
+    margin: 10px;
+    display: flex;
+}
+
+.quizinfo .quizdescription{
+    margin-left: 40px;
+    color:aqua;
+    font-family: 'Harry Potter', sans-serif;
+}
+
+.quizdescription p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #22242A;
+}
+
+.quizdescription a{
+    margin-left: 100px;
+}
+
+.quizquestions{
+    background-color:#D1AFFD;
+    padding: 2%;
+    margin-top: 4%;
+    border-radius: 80px;
+}
+
+.quizquestions p{
+    margin: 30px;
+}
+
+.addquestion{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+.add{
+    font-family: "Roboto Thin", sans-serif;
+    font-size: 20px;
+    width: 250px;
+    height: 50px;
+    background-color: #7B2CBF;
+    color: #FFFFFF;
+    padding: 14px 20px;
+    margin: 8px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+}
+
+.foot {
+    background-color: #22242A;
+    color: white;
+    bottom: 0;
+    padding: 1%;
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+}
+
+.foot hr {
+    height: 2px;
+    background-color: #73F6D0;
+}
+
+.footicon {
+    padding-right: 60px;
+}
+
+.footitem{
+    text-decoration: none;
+    margin: 8px 30px;
+}
+
+.items{
+    width: 90%;
+}
+
+.items1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.items1 a {
+    color: #FFFFFF;
+}
+
+.items1 a:hover {
+    color: #73F6D0;
+    text-shadow: 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.items2 {
+    margin-top: 0.5%;
+}
+
+.items2 a {
+    color: #FFFFFF;
+}
+
+.items2 a:hover {
+    color: #73F6D0;
+    text-shadow: 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.items1, .networks {
+    margin-bottom: 0.25%;
+}
+
+.items1, .items2, .networks {
+    display: flex;
+    align-items: center;
+}
+
+.networks {
+    justify-content: space-between;
+}
+
+.networks a{
+    text-decoration: none;
+    color: purple;
+    float: right;
+    margin: 10px;
+    font-size: 120%;
+}
+
+.networks a:hover {
+    color: #73F6D0;
+    text-shadow: 0 2px rgba(0, 0, 0, 0.2);
+}
