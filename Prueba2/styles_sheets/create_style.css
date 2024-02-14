@@ -79,6 +79,12 @@ body, html {
     font-family: 'Harry Potter', sans-serif;
 }
 
+fieldset{
+    padding: 20px;
+    border-radius: 20px;
+    border
+}
+
 .quizdescription p{
     font-family: Arial, Helvetica, sans-serif;
     color: #22242A;
@@ -90,7 +96,7 @@ body, html {
 
 .quizquestions{
     background-color:#D1AFFD;
-    padding: 2%;
+    padding: 3%;
     margin-top: 4%;
     border-radius: 80px;
 }
