@@ -3,10 +3,14 @@
     margin: 0;
 }
 
-.head{
-    background-color: violet;
+.head {
+    top: 0;
+    width: 100%;
+    padding: 5px;
+    position: fixed;
     align-items: center;
-    padding: 0.5%;
+    background-color: #D1AFFD;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .leftnav{
@@ -16,38 +20,74 @@
     align-items: center;
 }
 
+.leftnav i {
+    color: #FFFFFF;
+    text-shadow: 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.leftnav i:hover {
+    color: #73F6D0;
+    text-shadow: 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
 .titlenav{
+    color: #FFFFFF;
+    text-shadow: 0 2px rgba(0, 0, 0, 0.2);
     text-decoration: none;
-    font-family: 'Harry Potter', sans-serif; 
-    font-size: 170%;
+    font-family: 'Harry Potter', sans-serif;
+    margin-top: 15px;
+    font-size: 200%;
+}
+
+.titlenav:hover {
+    color: #73F6D0;
+    text-shadow: 0 4px rgba(0, 0, 0, 0.2);
 }
 
 .buttons {
-    margin-left: 70%;
+    margin-left: 75%;
 }
 
 .button1{
-    width: 150px; 
-    height: 50px; 
-    background-color: #4CAF50;
-    color: white;
+    font-family: "Roboto Thin", sans-serif;
+    font-size: 20px;
+    width: 150px;
+    height: 50px;
+    background-color: #7B2CBF;
+    color: #FFFFFF;
     padding: 14px 20px;
-    margin: 8px 10px; 
-    border: none;
+    margin: 8px 10px;
     border-radius: 4px;
     cursor: pointer;
+    border: none;
+}
+
+.button1:hover {
+    background-color: #6E1EB4;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+body {
+    margin-top: 5%;
 }
 
 .main h1{
+    color: #73F6D0;
     text-decoration: none;
-    font-family: 'Harry Potter', sans-serif; 
-    font-size: 400%;
+    font-family: 'Harry Potter', sans-serif;
+    font-size: 130px;
     text-align: center;
-    margin-top: 3%;
+    text-shadow: 0 2px rgba(0, 0, 0, 0.2);
 }
 
 .content1{
-    margin-top: 1.1%;
+    padding: 1%;
     float: left;
     display: flex;
     align-items: center;
@@ -55,7 +95,7 @@
 }
 
 .content2{
-    margin-top: 6%;
+    padding: 1%;
     float: left;
     display: flex;
     align-items: center;
@@ -65,48 +105,91 @@
 .who{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    color: turquoise;
+    color: #73F6D0;
+    text-shadow: 0 2px rgba(0, 0, 0, 0.1);
 }
 
 .news{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 30%;
-    color: turquoise;
+    margin-top: 6%;
+    color: #73F6D0;
+    text-shadow: 0 2px rgba(0, 0, 0, 0.1);
 }
 
 .newscontent{
     margin-top: 1.1%;
 }
 
-.foot{
-    background-color: black;
+.who hr, .news hr {
+    width: 98%;
+    margin: 0 auto;
+    border: none;
+    height: 2px;
+    background-color: #73F6D0;
+}
+
+.foot {
+    background-color: #22242A;
     color: white;
-    margin-top: 5%;
     bottom: 0;
-    padding: 2%;
+    padding: 1%;
+    margin-top: 3%;
     display: flex;
     align-items: center;
 }
 
+.foot hr {
+    height: 2px;
+    background-color: #73F6D0;
+}
+
+.footicon {
+    padding-right: 60px;
+}
+
 .footitem{
-    margin: 8px 30px; 
+    text-decoration: none;
+    margin: 8px 30px;
 }
 
 .items{
-    float: left;
-    text-align: center;
-    margin-left: 30%;
-    width: 150%;
+    width: 90%;
 }
 
-.items1{
-    
+.items1 a {
+    color: #FFFFFF;
 }
 
-.items2{
-    text-align: center;
-    margin-top: 3%;
+.items1 a:hover {
+    color: #73F6D0;
+    text-shadow: 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.items2 {
+    margin-top: 0.5%;
+}
+
+.items2 a {
+    color: #FFFFFF;
+}
+
+.items2 a:hover {
+    color: #73F6D0;
+    text-shadow: 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.items1, .networks {
+    margin-bottom: 0.25%;
+}
+
+.items1, .items2, .networks {
+    display: flex;
+    align-items: center;
+}
+
+.networks {
+    margin-left: 70%;
 }
 
 .networks a{
@@ -115,4 +198,9 @@
     float: right;
     margin: 10px;
     font-size: 120%;
+}
+
+.networks a:hover {
+    color: #73F6D0;
+    text-shadow: 0 2px rgba(0, 0, 0, 0.2);
 }
