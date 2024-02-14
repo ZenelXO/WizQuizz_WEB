@@ -3,10 +3,9 @@
     margin: 0;
 }
 
-html, body {
+body, html {
     height: 100%;
     margin: 0;
-    padding: 0;
 }
 
 .head {
@@ -46,92 +45,56 @@ html, body {
     text-shadow: 0 4px rgba(0, 0, 0, 0.2);
 }
 
-.container{
+main, .foot {
     flex: 1;
+    overflow-y: auto;
 }
 
-.asidenav{
-    background-color: #6E1EB4;
-    width: 12%;
-    height: 100%; 
-    float: left;
-    flex: 1;
-}
-
-.asidenav p{
-    color: white;
-    font-family: "Roboto", sans-serif;
-    margin-top: 1%;
-    margin: 2.5em;
-    bottom: 0;
-}
-
-body{
-    margin-top: 2.8%;
+.container {
     display: flex;
-}
-
-.main{
-    background-color: aquamarine;
-    flex: 1;
     height: 100%;
 }
 
-.buttons {
-    display: flex;
-    margin-left: 54%;
-    align-items: center;
+.asidenav {
+    width: 125px;
+    background-color: #4B2D56;
+    padding: 10px;
 }
 
-.buttons .sign{
-    padding-left: 3%;
-}
-
-.button1{
-    font-family: "Roboto Thin", sans-serif;
-    font-size: 20px;
-    width: 150px;
-    height: 50px;
-    background-color: #7B2CBF;
+aside {
     color: #FFFFFF;
-    padding: 14px 20px;
-    margin: 8px 10px;
-    border-radius: 4px;
-    cursor: pointer;
-    border: none;
-    float: right;
+    padding: 10px;
+    margin-top: 50%;
 }
 
-.button1:hover {
-    background-color: #6E1EB4;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+.quizzselection {
+    margin: 5%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-hr{
-    width: 98%;
-    margin: 0 auto;
-    border: none;
-    height: 2px;
-    background-color: #73F6D0;
+.quizz p {
+    text-align: center;
 }
 
-footer{
-    height: 50px; 
-    width:100%; 
-    position:absolute; 
-    bottom:0; 
-    left:0; 
+.quizz {
+    padding: 5px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.foot{
+.foot {
     background-color: #22242A;
-    color: white;
+    color: #FFFFFF;
+    bottom: 0;
     padding: 1%;
     display: flex;
     align-items: center;
 }
 
-.foot hr{
+.foot hr {
     height: 2px;
     background-color: #73F6D0;
 }
