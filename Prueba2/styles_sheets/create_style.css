@@ -96,13 +96,44 @@ fieldset{
 
 .quizquestions{
     background-color:#D1AFFD;
-    padding: 3%;
+    padding: 2.5%;
     margin-top: 4%;
     border-radius: 80px;
 }
 
 .quizquestions p{
     margin: 30px;
+    display: inline-block;
+}
+
+.question{
+    background-color:gray;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #22242A;
+    padding: 2.3%;
+    text-align: center; 
+}
+
+.answers{
+    text-align: center;
+}
+
+.answer{
+    background-color: greenyellow;
+    border-radius: 10px;
+    margin-top: 1%;
+    width: 16%;
+    border-style: solid;
+    border-color: #22242A;
+    padding: 4%;
+    text-align: center;
+    display: inline-block;
+}
+
+.infoanswer{
+    margin-top: 1%;
+    text-align: center;
 }
 
 .addquestion{
