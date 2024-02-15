@@ -4,10 +4,9 @@
 }
 
 .head {
-    top: 0;
     width: 100%;
-    padding: 5px;
     position: fixed;
+    display: flex;
     align-items: center;
     background-color: #D1AFFD;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -16,8 +15,10 @@
 .leftnav{
     border: none;
     margin-left: 2.5%;
+    padding: 5px;
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 .header-logo {
@@ -47,7 +48,6 @@ main, .foot {
 
 .container {
     display: flex;
-    height: 100%;
 }
 
 .asidenav {
@@ -58,8 +58,7 @@ main, .foot {
 
 aside {
     color: #FFFFFF;
-    padding: 10px;
-    margin-top: 50%;
+    padding-top: 50%;
 }
 
 aside p, img {
@@ -79,8 +78,8 @@ aside p, img {
 }
 
 .quizzselection {
-    margin: 5%;
-    padding: 10px;
+    padding-top: 6%;
+    padding-inline: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
