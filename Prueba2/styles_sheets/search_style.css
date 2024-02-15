@@ -24,7 +24,11 @@
 .header-logo {
     display: flex;
     align-items: center;
-    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.header-logo:hover {
+    filter: drop-shadow(0 2px 4px rgba(115, 246, 208, 0.6));
 }
 
 .titlenav{
@@ -51,7 +55,7 @@ main, .foot {
 }
 
 .asidenav {
-    width: 200px;
+    display: flex;
     background-color: #4B2D56;
     padding: 10px;
 }

@@ -25,7 +25,11 @@
 .header-logo {
     display: flex;
     align-items: center;
-    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.header-logo:hover {
+    filter: drop-shadow(0 2px 4px rgba(115, 246, 208, 0.6));
 }
 
 .titlenav{
@@ -63,8 +67,8 @@
 
 .button1{
     font-family: "Roboto Thin", sans-serif;
-    width: 75px;
-    height: 35px;
+    width: 82px;
+    height: 46px;
     background-color: #7B2CBF;
     color: #FFFFFF;
     padding: 10px;
