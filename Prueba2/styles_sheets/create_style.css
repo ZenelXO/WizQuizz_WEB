@@ -79,13 +79,18 @@ body, html {
     font-family: 'Harry Potter', sans-serif;
 }
 
+.quizdescription h1{
+    font-size: 3em;
+}
+
 fieldset{
     padding: 20px;
     border-radius: 20px;
 }
 
 .quizdescription p{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
+    font-size: 1.5em;
     color: #22242A;
 }
 
@@ -95,14 +100,18 @@ fieldset{
 
 .quizquestions{
     background-color:#D1AFFD;
-    padding: 2.5%;
+    padding: 2%;
     margin-top: 4%;
-    border-radius: 80px;
+    border-radius: 60px;
 }
 
 .quizquestions p{
     margin: 30px;
     display: inline-block;
+}
+
+.quizquestions input{
+    /*Para editar el estilo de los inputs en el cuadro*/
 }
 
 .question{
@@ -112,6 +121,10 @@ fieldset{
     border-color: #22242A;
     padding: 2.3%;
     text-align: center; 
+}
+
+.question input{
+    text-align: center;
 }
 
 .answers{
@@ -130,13 +143,56 @@ fieldset{
     display: inline-block;
 }
 
+.answer input{
+    text-align: center;
+}
+
+.answer .check{
+    /*Aqui va para editar el checkbox de las respuestas*/
+    
+}
+
 .infoanswer{
     margin-top: 1%;
     text-align: center;
 }
 
+.infoanswer p{
+    font-family: sans-serif;
+}
+
+.numberofcorrects{
+    margin-top: 1%;
+    display: flex;
+}
+
+.numberofcorrects input{
+    display: none;
+}
+
+.radio{
+    display: none;
+}
+
+.numberofcorrects label{
+    padding: 5px 10px;
+    margin-inline: 0.5%;
+    background-color: #888;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 40px;
+}
+
+#one:checked + .label1, 
+#multi:checked + .label2
+{
+    background-color: purple;
+    box-shadow: 0 3px rgba(0, 0, 0, 0.2);
+}
+
 .addquestion{
-    margin-top: 2%;
+    margin-top: 0.4%;
     display: flex;
     justify-content: center;
 }

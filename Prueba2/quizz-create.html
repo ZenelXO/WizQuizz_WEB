@@ -40,31 +40,39 @@
 
             <div class="quizquestions">
                 <div class="question">
-                    <input placeholder="Write the question here">
+                    <input placeholder="Write the question here" size="100px">
                 </div>
 
                 <div class="answers">
                     <div class="answer">
-                        <input type="checkbox">
+                        <input class="check" type="checkbox">
                         <input placeholder="Answer1">
                     </div>
                     <div class="answer">
-                        <input type="checkbox">
+                        <input class="check" type="checkbox">
                         <input placeholder="Answer2">
                     </div>
                     <div class="answer">
-                        <input type="checkbox">
+                        <input class="check" type="checkbox">
                         <input placeholder="Answer3">
                     </div>
                     <div class="answer">
-                        <input type="checkbox">
+                        <input class="check" type="checkbox">
                         <input placeholder="Answer4">
                     </div>
+                </div>
+
+                <div class="numberofcorrects">
+                    <input type="radio" id="one" name="corrects" value="Only 1 correct" class="radio">
+                    <label class="label label1" for="one">Only 1 correct</label>
+
+                    <input type="radio" id="multi" name="corrects" value="A lot of corrects" class="radio" checked>
+                    <label class="label label2" for="multi">A lot of corrects</label>
                 </div>
             </div>
 
             <div class="infoanswer">
-                <p>Marqué la casilla de la respuesta correcta.</p>
+                <p>Marque la casilla de la respuesta correcta.</p>
             </div>
 
             <div class="addquestion">
