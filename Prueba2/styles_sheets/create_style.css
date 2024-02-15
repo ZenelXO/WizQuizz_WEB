@@ -3,17 +3,10 @@
     margin: 0;
 }
 
-body, html {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
 .head {
-    top: 0;
     width: 100%;
-    padding: 5px;
     position: fixed;
+    display: flex;
     align-items: center;
     background-color: #D1AFFD;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -22,8 +15,10 @@ body, html {
 .leftnav{
     border: none;
     margin-left: 2.5%;
+    padding: 5px;
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 .header-logo {
@@ -47,11 +42,11 @@ body, html {
 }
 
 .container{
-    margin-top: 100px;
+    padding-top: 100px;
     background-color: white;
-    margin: 10px;
     height: 80%;
-    padding: 100px;
+    padding-inline: 100px;
+    padding-bottom: 100px;
 }
 
 .finish{
