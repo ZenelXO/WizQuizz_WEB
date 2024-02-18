@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    font-size: 15px;
+    align-items: center;
+}
+
+.login {
+    width: 50%;
+}
+
+.login-data {
+    max-width: 100%;
+    width: fit-content;
+    left: 50%;
+
+    
+    padding: 2%;
+    margin: 10%;
+    
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    align-items: left;
+
+    background-color: #AB75BE;
+}
+
+.login-data h1 {
+    margin: 0%;
+    color: #73F6D0;
+    text-decoration: none;
+    font-family: 'Harry Potter', sans-serif;
+    font-size: 80px;
+    text-align: center;
+    text-shadow: 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.user-data {
+    padding-left: 5%;
+}
+
+.user-data h2 {
+    padding-top: 3%;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+    margin-top: 5%;
+    
+    color: #73F6D0;
+    text-decoration: none;
+    font-family: 'Harry Potter', sans-serif;
+    font-size: 50px;
+    text-align: left;
+    text-shadow: 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.data-input {
+    padding: 0.05% 0.5%;
+    padding-left: 3%;
+    margin-top: 0%;
+    margin-bottom: 2%;
+
+    height: 25px;
+    width: 90%;
+
+    font-size: 100%;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.login-and-message{
+    padding-left: 5%;
+}
+
+.login-image {
+    width: 800px;
+}
+
+.login-button {
+    margin: 5% 0;
+
+    width: 94%;
+    height: 35px;
+    
+    border-radius: 10px;
+}
