@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    padding-top: 110px;
+}
+
+.preview {
+    padding: 8px;
+    margin-bottom: 30px;
+    margin-inline: 15px;
+    border-radius: 4px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #AB75BE;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
