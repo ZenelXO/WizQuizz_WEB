@@ -12,7 +12,7 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.leftnav{
+.left-navigation{
     border: none;
     margin-left: 2.5%;
     padding-top: 10px;
@@ -32,7 +32,7 @@
     filter: drop-shadow(0 2px 4px rgba(115, 246, 208, 0.6));
 }
 
-.titlenav{
+.title-nav{
     color: #FFFFFF;
     text-shadow: 0 2px rgba(0, 0, 0, 0.1);
     text-decoration: none;
@@ -41,7 +41,7 @@
     font-size: 200%;
 }
 
-.titlenav:hover {
+.title-nav:hover {
     color: #73F6D0;
     text-shadow: 0 4px rgba(0, 0, 0, 0.2);
 }
