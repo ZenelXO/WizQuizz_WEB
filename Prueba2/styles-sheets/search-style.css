@@ -9,26 +9,40 @@
 
 .asidenav {
     padding-top: 80px;
-    display: flex;
     background-color: #4B2D56;
 }
 
 .filter {
+    display: table;
     color: #FFFFFF;
-    vertical-align: middle;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
     padding: 6px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 6px;
+    width: 85%;
+}
+
+.filter img {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.filter span {
+    vertical-align: middle;
+    display: table-cell;
 }
 
 .filter:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     text-shadow: 0 2px rgba(0, 0, 0, 0.2);
     color: #73F6D0;
+    background-color: #6b427c;
     cursor: pointer;
 }
 
 .quizzselection {
     padding-top: 130px;
+    padding-bottom: 50px;
     padding-inline: 10px;
     display: flex;
     flex-wrap: wrap;
