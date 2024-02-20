@@ -3,51 +3,9 @@
     margin: 0;
 }
 
-.head {
-    width: 100%;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    background-color: #D1AFFD;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.left-navigation{
-    border: none;
-    margin-left: 2.5%;
-    padding: 5px;
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
-
-.header-logo {
-    display: flex;
-    align-items: center;
-    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
-}
-
-.header-logo:hover {
-    filter: drop-shadow(0 2px 4px rgba(115, 246, 208, 0.6));
-}
-
-.title-nav{
-    color: #FFFFFF;
-    text-shadow: 0 2px rgba(0, 0, 0, 0.1);
-    text-decoration: none;
-    font-family: 'Harry Potter', sans-serif;
-    margin-top: 15px;
-    font-size: 200%;
-}
-
-.title-nav:hover {
-    color: #73F6D0;
-    text-shadow: 0 4px rgba(0, 0, 0, 0.2);
-}
-
-main, .foot {
-    flex: 1;
-    overflow-y: auto;
+.image {
+    opacity: 1;
+    transition: .5s ease;
 }
 
 .container {
@@ -55,52 +13,72 @@ main, .foot {
 }
 
 .asidenav {
-    display: flex;
+    padding-top: 80px;
     background-color: #4B2D56;
-    padding: 10px;
-}
-
-aside {
-    color: #FFFFFF;
-    padding-top: 50%;
-}
-
-aside p, img {
-    vertical-align: middle;
-    padding: 6px;
 }
 
 .filter {
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: table;
+    color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 6px;
+    margin: 6px;
+    width: 85%;
+}
+
+.filter img {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.filter span {
+    vertical-align: middle;
+    display: table-cell;
 }
 
 .filter:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     text-shadow: 0 2px rgba(0, 0, 0, 0.2);
     color: #73F6D0;
+    background-color: #6b427c;
     cursor: pointer;
 }
 
 .quizzselection {
-    padding-top: 6%;
+    padding-top: 130px;
+    padding-bottom: 50px;
     padding-inline: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.quizz p {
+.quizz {
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 4px;
     text-align: center;
+    padding: 8px;
+    margin: 10px;
+    background-color: #9F77C6;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.quizz {
-    padding: 5px;
-    margin: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+.quizz h2 {
+    color: #FFFFFF;
 }
 
 .quizz:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.quizz:hover img {
+    opacity: 0.8;
+}
+
+.quizz:hover h2 {
+    color: #ADFFDE;
 }
 
 .foot {

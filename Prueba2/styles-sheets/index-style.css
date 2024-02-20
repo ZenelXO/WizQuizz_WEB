@@ -81,6 +81,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: start;
 }
 
 .new p {
@@ -126,7 +127,7 @@
 }
 
 .new:hover .image {
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 .new:hover h2 {
