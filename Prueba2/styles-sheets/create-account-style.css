@@ -29,18 +29,12 @@ main {
 .create-account-image {
     height: 400px;
 
-    transform: scaleX(-1);
-
     margin-right: 5%;
     margin-left: auto;
     
     align-items: center;
     z-index: -1;
 }
-
-/* #logo-image{
-    height: 400px;
-} */
 
 .create-account-data {
     width: 96%;
