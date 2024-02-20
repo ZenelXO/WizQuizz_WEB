@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    margin-top: 7%;
+    margin-bottom: 5%;
+}
+
+.quizquestions .header-button{
+    border-radius: 20px;
+}
+
+.preview{
+    display: flex;
+    justify-content: center;
+    background-color:#D1AFFD;
+    padding: 2%;
+    margin: 5%;
+    border-radius: 60px;
+}
+
+.preview .numofquestion{
+    background-color: white;
+    color: #22242A;
+    border-radius: 100px;
+    padding: 0.5%;
+    height: 1%;
+    width: 3%;
+    text-align: center;
+    display: flex;
+    justify-content: end;
+    justify-content: center;
+    align-items: end;
+}
+
+.loadimages{
+    text-align: center;
+}
+
+.loadimages input{
+    margin-top: 10%;
+    width: 60%;
+}
+
+.quizdescription{
+    margin-left: 2%;
+}
+
+.quizdescription h1{
+    font-family: 'Harry Potter', sans-serif;
+}
+
+.quizdescription p{
+    font-family: sans-serif;
+}
+
+.quizquestions{
+    text-align: center;
+    background-color:#D1AFFD;
+    padding: 2%;
+    margin: 5%;
+    border-radius: 60px;
+}
+
+.quizquestions p{
+    margin: 30px;
+    display: inline-block;
+}
+
+.quizquestions input{
+    /*Para editar el estilo de los inputs en el cuadro*/
+}
+
+.question{
+    background-color:gray;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #22242A;
+    padding: 2.3%;
+    text-align: center; 
+}
+
+.question input{
+    text-align: center;
+}
+
+.answers{
+    text-align: center;
+}
+
+.answer{
+    background-color: greenyellow;
+    border-radius: 10px;
+    margin-top: 1%;
+    width: 16%;
+    border-style: solid;
+    border-color: #22242A;
+    padding: 4%;
+    text-align: center;
+    display: inline-block;
+}
+
+.answer input{
+    text-align: center;
+}
+
+.answer .check{
+    /*Aqui va para editar el checkbox de las respuestas*/
+}
+
+.infoanswer{
+    margin-top: 1%;
+    text-align: center;
+}
+
+.infoanswer p{
+    font-family: sans-serif;
+}
+
+.allbuttons{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.removebuttons input{
+    width: 100%;
+}
+
+.editbuttons{
+    display: flex;
+}
+
+.editbuttons div{
+    margin-left: 1%;
+}
+
+.editbuttons input{
+    width: 100%;
+}
+
+.numberofcorrects{
+    margin-top: 1%;
+    display: flex;
+}
+
+.numberofcorrects input{
+    display: none;
+}
+
+.radio{
+    display: none;
+}
+
+.numberofcorrects label{
+    padding: 5px 10px;
+    margin-inline: 0.5%;
+    background-color: #888;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 40px;
+}
+
+#one:checked + .label1, 
+#multi:checked + .label2
+{
+    background-color: purple;
+    box-shadow: 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.addquestion{
+    margin-top: 0.4%;
+    display: flex;
+    justify-content: center;
+}
+
+.add{
+    font-family: "Roboto Thin", sans-serif;
+    font-size: 20px;
+    width: 250px;
+    height: 50px;
+    background-color: #7B2CBF;
+    color: #FFFFFF;
+    padding: 14px 20px;
+    margin: 8px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <title>WizQuizz</title>
+        <link rel="icon" href="../../website-images/wizquizz-logo.png" type="image/png/jpg" sizes="32x32">
+        <meta charset="UTF-8">
+        <meta name="viewport">
+        <script src="../../js-files/include-file.js"></script>
+        <link rel="stylesheet" href="../../styles-sheets/create-questions-style.css">
+        <link href="https://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <header include-file="question-header.html"></header>
+
+    <body>
+        <div class="container">
+            <div class="preview">
+                <div class="loadimages">
+                    <img src="../../website-images/sample-news-image.png" width="400" height="300">
+                    <a href=""><input class="header-button" type="button" value="+ Add Image"></a>
+                </div>
+                
+                <div class="quizdescription">
+                    <h1>Quizz´s Title</h1>
+                    <p>Grandioso por igual en sus concepciones pictóricas, escultóricas y arquitectónicas, Miguel Ángel es la figura culminante
+                    del Cinquecento y uno de los mayores genios de la historia del arte. Más allá de la serenidad y la belleza renacentista,
+                    el artista italiano imprimió a sus obras aquel formidable vigor expresivo que ya sus contemporáneos llamarían terribilita.</p>
+                    <p>En estas secciones intentamos profundizar en el conocimiento de algunas personalidades mediante biografías más amplias y estudios extensos sobre sus aportaciones,
+                        acompañados de interesantes elementos multimedia (fotos, vídeos, tablas, ilustraciones). En las Monografías reunimos biografías y estudios de figuras claves de la
+                        historia, mientras que en los Reportajes incluiremos a los protagonistas de la más reciente actualidad.
+                    </p>
+                </div>
+
+                <div class="numofquestion">
+                    <h1>01</h1>
+                </div>
+            </div>
+
+            <div class="quizquestions">
+                <div class="question">
+                    <input placeholder="Write the question here" size="100px">
+                </div>
+            
+                <div class="answers">
+                    <div class="answer">
+                        <input class="check" type="checkbox">
+                        <input placeholder="Answer1">
+                    </div>
+                    <div class="answer">
+                        <input class="check" type="checkbox">
+                        <input placeholder="Answer2">
+                    </div>
+                    <div class="answer">
+                        <input class="check" type="checkbox">
+                        <input placeholder="Answer3">
+                    </div>
+                    <div class="answer">
+                        <input class="check" type="checkbox">
+                        <input placeholder="Answer4">
+                    </div>
+                </div>
+                <!--
+                <div class="numberofcorrects">
+                    <input type="radio" id="one" name="corrects" value="Only 1 correct" class="radio">
+                    <label class="label label1" for="one">Only 1 correct</label>
+            
+                    <input type="radio" id="multi" name="corrects" value="A lot of corrects" class="radio" checked>
+                    <label class="label label2" for="multi">A lot of corrects</label>
+                </div>
+                -->
+
+                <div class="allbuttons">
+                    <div class="removebuttons">
+                        <a href=""><input class="header-button" type="button" value="Delete Question"></a>
+                    </div>
+    
+                    <div class="editbuttons">
+                        <div class="editbuttons1">
+                            <a href=""><input class="header-button" type="button" value="Remove Answer (2/4)"></a>
+                        </div>
+    
+                        <div class="editbuttons2">
+                            <a href=""><input class="header-button" type="button" value="Add Answer (2/4)"></a>
+                        </div>
+    
+                        <div class="editbuttons3">
+                            <a href=""><input class="header-button" type="button" value="Finish Question"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <footer include-file="../common/footer.html"></footer>
+
+    <script>
+        IncludeFile()
+    </script>
+</html>

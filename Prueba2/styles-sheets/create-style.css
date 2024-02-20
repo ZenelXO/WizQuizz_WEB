@@ -99,6 +99,7 @@ fieldset{
 }
 
 .quizquestions{
+    text-align: center;
     background-color:#D1AFFD;
     padding: 2%;
     margin-top: 4%;
