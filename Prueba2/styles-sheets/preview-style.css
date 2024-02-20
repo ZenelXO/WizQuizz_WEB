@@ -5,17 +5,92 @@
 
 main {
     padding-top: 110px;
+    padding-bottom: 30px;
 }
 
 .preview {
-    padding: 8px;
-    margin-bottom: 30px;
-    margin-inline: 15px;
-    border-radius: 4px;
-    text-align: center;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #AB75BE;
+    margin-inline: 5%;
+    margin-bottom: 30px;
+}
+
+.quizz-info {
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 4px;
+    padding: 10px;
+    margin-right: 30px;
+    background-color: #9F77C6;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.quizz-info img {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.quizz-start-button {
+    font-family: "Roboto Thin", sans-serif;
+    width: auto;
+    height: auto;
+    background-color: #7B2CBF;
+    color: #FFFFFF;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    float: right;
+}
+
+.quizz-description {
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #9F77C6;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.quizz-questions {
+    display: flex;
+    margin-inline: 5%;
+}
+
+.question {
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #9F77C6;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.answers {
+    display: block;
+}
+
+.answer-button {
+    font-family: "Roboto Thin", sans-serif;
+    width: auto;
+    height: auto;
+    background-color: #7B2CBF;
+    color: #FFFFFF;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.answer-button image {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.answer-button span {
+    vertical-align: middle;
+    display: table-cell;
 }
