@@ -77,7 +77,7 @@ main {
     margin-bottom: 8px;
     border-radius: 4px;
     cursor: pointer;
-    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .finish-button:hover {

@@ -31,11 +31,11 @@
 
 .title-nav{
     color: #FFFFFF;
-    text-shadow: 0 2px rgba(0, 0, 0, 0.1);
     text-decoration: none;
     font-family: 'Harry Potter', sans-serif;
     margin-top: 15px;
     font-size: 200%;
+    text-shadow: 0 0 2px #000000;
 }
 
 .title-nav:hover {
@@ -54,6 +54,7 @@
 .sign {
     color: #FFFFFF;
     text-shadow: 0 2px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .sign:hover {
@@ -66,12 +67,12 @@
     width: 82px;
     height: 46px;
     background-color: #7B2CBF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     color: #FFFFFF;
     padding: 10px;
     margin: 10px;
     border-radius: 4px;
     cursor: pointer;
-    border: none;
 }
 
 .header-button:hover {
