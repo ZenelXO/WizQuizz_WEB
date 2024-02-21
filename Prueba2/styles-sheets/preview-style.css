@@ -10,12 +10,11 @@ main {
 
 .preview {
     display: flex;
-    margin-inline: 10%;
+    margin-inline: 15%;
     margin-bottom: 30px;
 }
 
 .quizz-info {
-    font-family: Arial, Helvetica, sans-serif;
     border-radius: 4px;
     padding: 10px;
     margin-right: 30px;
@@ -29,8 +28,20 @@ main {
     display: table-cell;
 }
 
+.quizz-lower-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.additional-info {
+    font-family: 'Arial Black', sans-serif;
+    color: #FFFFFF;
+    text-shadow: 0 0 2px #000000;
+}
+
 .quizz-start-button {
-    font-family: "Roboto Thin", sans-serif;
+    font-family: "Arial Black", sans-serif;
     width: auto;
     height: auto;
     background-color: #7B2CBF;
@@ -40,11 +51,29 @@ main {
     border-radius: 4px;
     cursor: pointer;
     border: none;
-    float: right;
 }
 
-.quizz-description {
-    font-family: Arial, Helvetica, sans-serif;
+.quizz-start-button:hover {
+    background-color: #6E1EB4;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
+}
+
+.quizz-description h1 {
+    font-family: 'Harry Potter', sans-serif;
+    color: #73F6D0;
+    font-size: 70px;
+    text-shadow: 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.quizz-description p {
+    text-align: justify;
+    font-family: Arial, sans-serif;
+    color: #FFFFFF;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #9F77C6;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .quizz-questions {
@@ -52,45 +81,146 @@ main {
 }
 
 .question {
-    font-family: Arial, Helvetica, sans-serif;
     border-radius: 4px;
     padding: 10px;
     margin-bottom: 30px;
-    background-color: #9F77C6;
+    background-color: #8D77C6;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+.question p {
+    text-align: justify;
+    font-family: Arial, sans-serif;
+    color: #FFFFFF;
+    margin-inline: 5px;
+}
+
 .answers {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 4px;
+    background-color: #ebaeff;
 }
 
 .answers img {
     padding-right: 10px;
 }
 
-.answer-button {
+.cauldron-button {
     font-family: "Roboto Thin", sans-serif;
     width: 210px;
     height: auto;
-    background-color: #7B2CBF;
+    text-align: left;
     color: #FFFFFF;
+    background-color: #D5546D;
     padding: 10px;
-    margin-top: 10px;
     border-radius: 4px;
     cursor: pointer;
-    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.cauldron-button:hover {
+    background-color: #EA677E;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.cauldron-button image {
     vertical-align: middle;
     display: table-cell;
 }
 
-.answer-button image {
+.cauldron-button span {
     vertical-align: middle;
     display: table-cell;
 }
 
-.answer-button span {
+.mage-staff-button {
+    font-family: "Roboto Thin", sans-serif;
+    width: 210px;
+    height: auto;
+    text-align: left;
+    color: #FFFFFF;
+    background-color: #EFA928;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.mage-staff-button:hover {
+    background-color: #F8C059;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.mage-staff-button image {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.mage-staff-button span {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.mana-button {
+    font-family: "Roboto Thin", sans-serif;
+    width: 210px;
+    height: auto;
+    text-align: left;
+    color: #FFFFFF;
+    background-color: #2C70AE;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.mana-button:hover {
+    background-color: #559DE1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.mana-button image {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.mana-button span {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.magic-ball-button {
+    font-family: "Roboto Thin", sans-serif;
+    width: 210px;
+    height: auto;
+    text-align: left;
+    color: #FFFFFF;
+    background-color: #2E9DA6;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.magic-ball-button:hover {
+    background-color: #36B9C2;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.magic-ball-button image {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.magic-ball-button span {
     vertical-align: middle;
     display: table-cell;
 }
