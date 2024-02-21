@@ -13,9 +13,7 @@ main {
 
 #wand-icon {
     transform: scaleX(-1);
-    position: absolute;
     margin-top: 50px;
-    margin-right: 32%;
 }
 
 .quizz-mark {
@@ -39,6 +37,7 @@ main {
     font-family: 'Harry Potter', sans-serif;
     color: #73F6D0;
     font-size: 70px;
+    text-shadow: 0 2px rgba(0, 0, 0, 0.2);
 }
 
 .quizz-mark h2 {
@@ -50,6 +49,7 @@ main {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     animation: animate 10s linear reverse infinite;
+    text-shadow: 0 2px rgba(0, 0, 0, 0.2);
 }
 
 @keyframes animate {
