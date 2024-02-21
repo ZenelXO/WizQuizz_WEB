@@ -54,7 +54,6 @@
 .sign {
     color: #FFFFFF;
     text-shadow: 0 2px rgba(0, 0, 0, 0.2);
-    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .sign:hover {
