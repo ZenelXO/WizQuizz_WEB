@@ -8,14 +8,13 @@
     transition: .5s ease;
 }
 
-.who, .news {
-    margin-right: 5%;
-    margin-left: 5%;
+.who-content, .news-content {
+    margin-inline: 5%;
 }
 
 .main h1{
-    padding-top: 6%;
-    padding-bottom: 1%;
+    padding-top: 150px;
+    padding-bottom: 30px;
     color: #73F6D0;
     text-decoration: none;
     font-family: 'Harry Potter', sans-serif;
@@ -24,15 +23,42 @@
     text-shadow: 0 3px rgba(0, 0, 0, 0.2);
 }
 
+.who{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.who-title {
+    border: 1px solid rgba(0, 0, 0);
+    background-color: #8D77C6;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.who-title hr {
+    margin: 0 auto;
+    border: none;
+    height: 2px;
+    background-color: #73F6D0;
+}
+
+.who-title h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #73F6D0;
+    text-shadow: 0 2px rgba(0, 0, 0, 0.1);
+}
+
 .who-content {
     background-color: #9F77C6;
-    margin-top: 1%;
+    margin-top: 30px;
     padding: 10px;
     float: left;
     display: flex;
     align-items: center;
     vertical-align: auto;
-    text-align: left;
+    text-align: justify;
     font-family: "Arial Black", serif;
     color: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -48,35 +74,35 @@
     padding: 5px;
 }
 
-.who{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.news {
+    margin-top: 60px;
+    margin-bottom: 30px;
 }
 
-.who h2 {
+.news-title {
+    border: 1px solid rgba(0, 0, 0);
+    background-color: #8D77C6;
+}
+
+.news-title hr {
+    margin: 0 auto;
+    border: none;
+    height: 2px;
+    background-color: #73F6D0;
+}
+
+.news-title h2 {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     color: #73F6D0;
     text-shadow: 0 2px rgba(0, 0, 0, 0.1);
 }
 
-.news{
+.news-content {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top:1%;
+    margin-top: 50px;
     text-shadow: 0 2px rgba(0, 0, 0, 0.1);
-}
-
-.news h2 {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #73F6D0;
-    text-shadow: 0 2px rgba(0, 0, 0, 0.1);
-}
-
-.newscontent {
-    margin-top: 0.75%;
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -140,12 +166,4 @@
 
 .new:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
-}
-
-hr {
-    width: 100%;
-    margin: 0 auto;
-    border: none;
-    height: 2px;
-    background-color: #73F6D0;
 }
