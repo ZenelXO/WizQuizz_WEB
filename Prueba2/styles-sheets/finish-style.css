@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    margin-top: 150px;
+    margin-bottom: 65px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#wand-icon {
+    transform: scaleX(-1);
+    position: absolute;
+    margin-top: 50px;
+    margin-right: 32%;
+}
+
+.quizz-mark {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+}
+
+#quizz-description {
+    width: 400px;
+    font-family: "Arial Black", serif;
+    color: #FFFFFF;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 30px;
+    background-color: #9F77C6;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.quizz-mark  h1 {
+    font-family: 'Harry Potter', sans-serif;
+    color: #73F6D0;
+    font-size: 70px;
+}
+
+.quizz-mark h2 {
+    font-family: "Arial Black", sans-serif;
+    background: linear-gradient(90deg, #ff0000, #ffff00, #ff00f3, #0033ff, #ff00c4, #ff0000);
+    font-size: 100px;
+    background-size: 400%;
+    font-weight: 600;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 10s linear reverse infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0;
+    }
+    100% {
+        background-position: 400%;
+    }
+}
+
+.buttons {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.finish-button {
+    font-family: "Arial Black", sans-serif;
+    width: 175px;
+    height: 46px;
+    background-color: #7B2CBF;
+    color: #FFFFFF;
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+}
+
+.finish-button:hover {
+    background-color: #6E1EB4;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
+}
