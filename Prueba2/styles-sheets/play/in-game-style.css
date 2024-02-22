@@ -4,7 +4,7 @@
 }
 
 main{
-    padding-top: 6%;
+    padding-top: 3%;
 }
 
 .question{
@@ -15,9 +15,8 @@ main{
     align-items: center;
     justify-content: space-between;
     background-color: #9F77C6;
-    padding: 6%;
-    width: 82%;
-    height: 1px;
+    padding: 4%;
+    width: 86%;
     border-radius: 50px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -29,84 +28,162 @@ main{
     margin-right: auto;
 }
 
-.portrait{
-
-    
-} 
-
-.addImage{
-    margin-top: 10px;
-}
-
 .questionTitle{
     text-align: center;
 }
 
 .questionNumber{
     margin-left: auto;
+    margin-bottom: auto;
 }
 
-.answer{
+.answerBox{
+    font-family: Arial, sans-serif;
+    font-size: 40px;
     margin: 3%;
     background-color: #9F77C6;
     display: flex;
     flex-direction: column;
-    font-family: "Roboto Thin", sans-serif;
-    height: 450px;
     padding: 2%;
     border-radius: 50px;
-    font-size: 40px;
 }
 
-.firstAnswer{
-    
+.answers {
     display: flex;
+    flex-direction: column;
+    padding: 0.5%;
     align-items: center;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #ebaeff;
 }
 
-.firstAnswer p{
-    padding-left: 2%;
+.answers img {
+    padding-right: 10px;
 }
 
-.secondAnswer{
-    display: flex;
-    align-items: center;
+.cauldron-button {
+    font-family: "Roboto Thin", sans-serif;
+    font-size: 30px;
+    width: 100%;
+    margin-bottom: 1%;
+    height: auto;
+    text-align: left;
+    color: #FFFFFF;
+    background-color: #D5546D;
+    padding: 1%;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.secondAnswer p{
-    padding-left: 2%;
+.cauldron-button:hover {
+    background-color: #EA677E;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 }
 
-.thirdAnswer{
-    display: flex;
-    align-items: center;
+.cauldron-button image {
+    vertical-align: middle;
+    display: table-cell;
 }
 
-.thirdAnswer p{
-    padding-left: 2%;
+.cauldron-button span {
+    vertical-align: middle;
+    display: table-cell;
 }
 
-.dot{
-    height: 25px;
-    width: 25px;
-    background-color: red;
-    border-radius: 50%;
-    display: inline-block;
+.mage-staff-button {
+    font-family: "Roboto Thin", sans-serif;
+    font-size: 30px;
+    width: 100%;
+    margin-bottom: 1%;
+    height: auto;
+    text-align: left;
+    color: #FFFFFF;
+    background-color: #EFA928;
+    padding: 1%;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.triangle{
-    width: 0;
-    height: 0;
-    display: inline-block;
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    border-bottom: 30px solid #3498db;
+.mage-staff-button:hover {
+    background-color: #F8C059;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 }
 
-.square{
-    width: 25px;
-    height: 25px;
-    background-color: rgb(178, 243, 27);
+.mage-staff-button image {
+    vertical-align: middle;
+    display: table-cell;
 }
+
+.mage-staff-button span {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.mana-button {
+    font-family: "Roboto Thin", sans-serif;
+    font-size: 30px;
+    width: 100%;
+    margin-bottom: 1%;
+    height: auto;
+    text-align: left;
+    color: #FFFFFF;
+    background-color: #2C70AE;
+    padding: 1%;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.mana-button:hover {
+    background-color: #559DE1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.mana-button image {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.mana-button span {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.magic-ball-button {
+    font-family: "Roboto Thin", sans-serif;
+    font-size: 30px;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    color: #FFFFFF;
+    background-color: #2E9DA6;
+    padding: 1%;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.magic-ball-button:hover {
+    background-color: #36B9C2;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.magic-ball-button image {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.magic-ball-button span {
+    vertical-align: middle;
+    display: table-cell;
+}
+
 
 
