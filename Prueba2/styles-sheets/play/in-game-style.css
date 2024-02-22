@@ -4,7 +4,7 @@
 }
 
 main{
-    padding-top: 3%;
+    padding-top: 1%;
 }
 
 .question{
@@ -13,6 +13,7 @@ main{
     font-family: "Roboto Thin", sans-serif;
     font-size: 40px;
     align-items: center;
+    color: #FFFFFF;
     justify-content: space-between;
     background-color: #9F77C6;
     padding: 4%;
@@ -30,12 +31,41 @@ main{
 
 .questionTitle{
     text-align: center;
+    margin-left: 5%;
+    margin-right: 10%;
 }
 
 .questionNumber{
-    margin-left: auto;
-    margin-bottom: auto;
+    position: absolute;
+    left: 91%;
+    bottom: 86%;
+    padding: 1%;
+    background-color: #7B2CBF;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
 }
+
+.next-question{
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: #7B2CBF;
+    width: 160px;
+    height: 60px;
+    position: absolute;
+    bottom: 64%;
+    right: 5%;
+    border-radius: 6%;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.next-question:hover {
+    background-color: #6E1EB4;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
+}
+
 
 .answerBox{
     font-family: Arial, sans-serif;
@@ -83,6 +113,12 @@ main{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 }
 
+.cauldron-button:focus {
+    outline: none;
+    background-color: #e22a4c;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
 .cauldron-button image {
     vertical-align: middle;
     display: table-cell;
@@ -113,6 +149,13 @@ main{
     background-color: #F8C059;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 }
+
+.mage-staff-button:focus {
+    outline: none;
+    background-color: #e49604;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
 
 .mage-staff-button image {
     vertical-align: middle;
@@ -145,6 +188,12 @@ main{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 }
 
+.mana-button:focus {
+    outline: none;
+    background-color: #0e88fa;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
 .mana-button image {
     vertical-align: middle;
     display: table-cell;
@@ -172,6 +221,12 @@ main{
 
 .magic-ball-button:hover {
     background-color: #36B9C2;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.magic-ball-button:focus {
+    outline: none;
+    background-color: #22d2df;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 }
 
