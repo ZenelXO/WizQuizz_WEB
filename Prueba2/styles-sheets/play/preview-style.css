@@ -89,11 +89,27 @@ main {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.question p {
+.question-info {
+    display: flex;
+    align-items: flex-start;
+}
+
+.question-info p {
     text-align: justify;
     font-family: Arial, sans-serif;
     color: #FFFFFF;
-    margin-inline: 5px;
+    margin-inline: 4px;
+    margin-bottom: 4px;
+}
+
+.num-of-question {
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    background-color: #FFFFFF;
+    color: #22242A;
+    border-radius: 100px;
+    padding: 5px;
+    margin-left: 4px;
+    align-self: flex-start;
 }
 
 .answers {
