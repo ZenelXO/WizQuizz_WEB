@@ -1,27 +1,31 @@
 *{
     padding: 0;
     margin: 0;
-}
-
-.container{
+    }
+    
+    
+    .container{
     margin-top: 7%;
     margin-bottom: 5%;
-}
-
-.quizquestions .header-button{
+    }
+    
+    
+    .quizquestions .header-button{
     border-radius: 20px;
-}
-
-.preview{
+    }
+    
+    
+    .preview{
     display: flex;
     justify-content: center;
-    background-color:#D1AFFD;
+    background-color:#9F77C6;
     padding: 2%;
     margin: 5%;
     border-radius: 60px;
-}
-
-.preview .numofquestion{
+    }
+    
+    
+    .preview .numofquestion{
     background-color: white;
     color: #22242A;
     border-radius: 100px;
@@ -33,129 +37,323 @@
     justify-content: end;
     justify-content: center;
     align-items: end;
-}
-
-.loadimages{
+    }
+    
+    
+    .loadimages{
     text-align: center;
-}
-
-.loadimages input{
+    }
+    
+    
+    .loadimages input{
     margin-top: 10%;
     width: 60%;
-}
-
-.quizdescription{
+    }
+    
+    
+    .quizdescription{
     margin-left: 2%;
-}
-
-.quizdescription h1{
+    }
+    
+    
+    .quizdescription h1{
     font-family: 'Harry Potter', sans-serif;
-}
-
-.quizdescription p{
+    }
+    
+    
+    .quizdescription p{
     font-family: sans-serif;
-}
-
-.quizquestions{
+    }
+    
+    
+    .quizquestions{
     text-align: center;
-    background-color:#D1AFFD;
+    background-color:#9F77C6;
     padding: 2%;
     margin: 5%;
     border-radius: 60px;
     margin-top: -2.5%;
-}
-
-.quizquestions p{
+    }
+    
+    
+    .quizquestions p{
     margin: 30px;
     display: inline-block;
-}
-
-.quizquestions input{
+    }
+    
+    
+    .quizquestions input{
     /*Para editar el estilo de los inputs en el cuadro*/
-}
-
-.question{
+    }
+    
+    
+    .question{
     background-color:gray;
     border-radius: 10px;
     border-style: solid;
     border-color: #22242A;
     padding: 2.3%;
-    text-align: center; 
-}
-
-.question input{
     text-align: center;
-}
-
-.answers{
+    }
+    
+    
+    .question input{
     text-align: center;
-}
-
-.answer{
-    background-color: greenyellow;
-    border-radius: 10px;
+    }
+    
+    
+    .answerBox{
+    font-family: Arial, sans-serif;
+    font-size: 40px;
+    margin: 3%;
+    background-color: #9F77C6;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    border-radius: 50px;
+    }
+    
+    
+    .answers {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5%;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #ebaeff;
+    }
+    
+    
+    .answers img {
+    padding-right: 10px;
+    }
+    
+    
+    .cauldron-button {
+    font-family: "Roboto Thin", sans-serif;
+    font-size: 30px;
+    width: 100%;
+    margin-bottom: 1%;
+    height: auto;
+    text-align: left;
+    color: #FFFFFF;
+    background-color: #D5546D;
+    padding: 1%;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    
+    
+    .cauldron-button:hover {
+    background-color: #EA677E;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    }
+    
+    
+    .cauldron-button:focus {
+    outline: none;
+    background-color: #e22a4c;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    }
+    
+    
+    .cauldron-button image {
+    vertical-align: middle;
+    display: table-cell;
+    }
+    
+    
+    .cauldron-button span {
+    vertical-align: middle;
+    display: table-cell;
+    }
+    
+    
+    .mage-staff-button {
+    font-family: "Roboto Thin", sans-serif;
+    font-size: 30px;
+    width: 100%;
+    margin-bottom: 1%;
+    height: auto;
+    text-align: left;
+    color: #FFFFFF;
+    background-color: #EFA928;
+    padding: 1%;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    
+    
+    .mage-staff-button:hover {
+    background-color: #F8C059;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    }
+    
+    
+    .mage-staff-button:focus {
+    outline: none;
+    background-color: #e49604;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    }
+    
+    
+    
+    
+    .mage-staff-button image {
+    vertical-align: middle;
+    display: table-cell;
+    }
+    
+    
+    .mage-staff-button span {
+    vertical-align: middle;
+    display: table-cell;
+    }
+    
+    
+    .mana-button {
+    font-family: "Roboto Thin", sans-serif;
+    font-size: 30px;
+    width: 100%;
+    margin-bottom: 1%;
+    height: auto;
+    text-align: left;
+    color: #FFFFFF;
+    background-color: #2C70AE;
+    padding: 1%;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    
+    
+    .mana-button:hover {
+    background-color: #559DE1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    }
+    
+    
+    .mana-button:focus {
+    outline: none;
+    background-color: #0e88fa;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    }
+    
+    
+    .mana-button image {
+    vertical-align: middle;
+    display: table-cell;
+    }
+    
+    
+    .mana-button span {
+    vertical-align: middle;
+    display: table-cell;
+    }
+    
+    
+    .magic-ball-button {
+    font-family: "Roboto Thin", sans-serif;
+    font-size: 30px;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    color: #FFFFFF;
+    background-color: #2E9DA6;
+    padding: 1%;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    
+    
+    .magic-ball-button:hover {
+    background-color: #36B9C2;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    }
+    
+    
+    .magic-ball-button:focus {
+    outline: none;
+    background-color: #22d2df;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    }
+    
+    
+    .magic-ball-button image {
+    vertical-align: middle;
+    display: table-cell;
+    }
+    
+    
+    .magic-ball-button span {
+    vertical-align: middle;
+    display: table-cell;
+    }
+    
+    
+    .infoanswer{
     margin-top: 1%;
-    width: 16%;
-    border-style: solid;
-    border-color: #22242A;
-    padding: 4%;
     text-align: center;
-    display: inline-block;
-}
-
-.answer input{
-    text-align: center;
-}
-
-.answer .check{
-    /*Aqui va para editar el checkbox de las respuestas*/
-}
-
-.infoanswer{
-    margin-top: 1%;
-    text-align: center;
-}
-
-.infoanswer p{
+    }
+    
+    
+    .infoanswer p{
     font-family: sans-serif;
-}
-
-.allbuttons{
+    }
+    
+    
+    .allbuttons{
     margin-top: 2%;
     display: flex;
     justify-content: space-between;
-}
-
-.removebuttons input{
+    }
+    
+    
+    .removebuttons input{
     width: 100%;
-}
-
-.editbuttons{
+    }
+    
+    
+    .editbuttons{
     display: flex;
-}
-
-.editbuttons div{
+    }
+    
+    
+    .editbuttons div{
     margin-left: 1%;
-}
-
-.editbuttons input{
+    }
+    
+    
+    .editbuttons input{
     width: 100%;
-}
-
-.numberofcorrects{
+    }
+    
+    
+    .numberofcorrects{
     margin-top: 1%;
     display: flex;
-}
-
-.numberofcorrects input{
+    }
+    
+    
+    .numberofcorrects input{
     display: none;
-}
-
-.radio{
+    }
+    
+    
+    .radio{
     display: none;
-}
-
-.numberofcorrects label{
+    }
+    
+    
+    .numberofcorrects label{
     padding: 5px 10px;
     margin-inline: 0.5%;
     background-color: #888;
@@ -163,22 +361,25 @@
     cursor: pointer;
     font-size: 18px;
     border-radius: 40px;
-}
-
-#one:checked + .label1, 
-#multi:checked + .label2
-{
+    }
+    
+    
+    #one:checked + .label1,
+    #multi:checked + .label2
+    {
     background-color: purple;
     box-shadow: 0 3px rgba(0, 0, 0, 0.2);
-}
-
-.addquestion{
+    }
+    
+    
+    .addquestion{
     margin-top: 0.4%;
     display: flex;
     justify-content: center;
-}
-
-.add{
+    }
+    
+    
+    .add{
     font-family: "Roboto Thin", sans-serif;
     font-size: 20px;
     width: 250px;
@@ -190,4 +391,5 @@
     border-radius: 4px;
     cursor: pointer;
     border: none;
-}
+    }
+    
