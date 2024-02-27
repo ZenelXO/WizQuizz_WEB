@@ -5,6 +5,8 @@
 
 main{
     padding-top: 1%;
+    background-color: #22242A;
+    padding-bottom: 1%;
 }
 
 .question{
@@ -36,11 +38,14 @@ main{
 }
 
 .questionNumber{
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    background-color: #FFFFFF;
+    color: #22242A;
+    border-radius: 100px;
     position: absolute;
     left: 91%;
     bottom: 86%;
     padding: 1%;
-    background-color: #7B2CBF;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 50%;
 }
@@ -53,9 +58,8 @@ main{
     background-color: #7B2CBF;
     width: 160px;
     height: 60px;
-    position: absolute;
-    bottom: 64%;
-    right: 5%;
+    margin-top: 5%;
+    margin-left: auto;
     border-radius: 6%;
     cursor: pointer;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -86,6 +90,7 @@ main{
     border-radius: 4px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: #ebaeff;
+    align-items: end;
 }
 
 .answers img {
