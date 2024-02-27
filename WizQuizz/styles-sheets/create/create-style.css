@@ -30,14 +30,29 @@
     display: flex;
 }
 
+.quizdescription{
+    display: flex;
+    flex-direction: column;
+}
+
+.quizdescription .description{
+    margin-top: 3%;
+    text-align: left;
+    height: 100%;
+    resize: none;
+    font-size: 15px;
+}
+
 .quizinfo .quizdescription{
     margin-left: 40px;
     color:aqua;
     font-family: 'Harry Potter', sans-serif;
 }
 
-.quizdescription h1{
+.quizdescription .quizztitle{
     font-size: 3em;
+    font-family: 'Harry Potter', sans-serif;
+    color: green;
 }
 
 fieldset{
