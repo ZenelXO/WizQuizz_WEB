@@ -122,7 +122,7 @@ main {
 
 .login-button:hover {
     background-color: #8708f6;
-    box-shadow: 0 0 35px purple;
+    box-shadow: 0 0 15px purple;
 }
 
 .create-account{
@@ -176,5 +176,5 @@ main {
 
 .create-account-button:hover {
     background-color: #555151;
-    box-shadow: 0 0 35px purple;
+    box-shadow: 0 0 15px purple;
 }
