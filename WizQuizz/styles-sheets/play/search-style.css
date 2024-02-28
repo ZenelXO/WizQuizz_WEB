@@ -13,7 +13,8 @@
 }
 
 .asidenav {
-    padding-top: 80px;
+    padding-top: 100px;
+    padding-bottom: 20px;
     background-color: #4B2D56;
 }
 
@@ -46,8 +47,8 @@
 }
 
 .quizzselection {
-    padding-top: 130px;
-    padding-bottom: 50px;
+    padding-top: 170px;
+    padding-bottom: 90px;
     padding-inline: 10px;
     display: flex;
     flex-wrap: wrap;

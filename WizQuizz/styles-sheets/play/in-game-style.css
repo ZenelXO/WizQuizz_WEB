@@ -103,7 +103,7 @@ main{
     width: 100%;
     margin-bottom: 1%;
     height: auto;
-    text-align: left;
+    text-align: justify;
     color: #FFFFFF;
     background-color: #D5546D;
     padding: 1%;
@@ -124,7 +124,7 @@ main{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 }
 
-.cauldron-button image {
+.cauldron-button img {
     vertical-align: middle;
     display: table-cell;
 }
@@ -140,7 +140,7 @@ main{
     width: 100%;
     margin-bottom: 1%;
     height: auto;
-    text-align: left;
+    text-align: justify;
     color: #FFFFFF;
     background-color: #EFA928;
     padding: 1%;
@@ -162,7 +162,7 @@ main{
 }
 
 
-.mage-staff-button image {
+.mage-staff-button img {
     vertical-align: middle;
     display: table-cell;
 }
@@ -178,7 +178,7 @@ main{
     width: 100%;
     margin-bottom: 1%;
     height: auto;
-    text-align: left;
+    text-align: justify;
     color: #FFFFFF;
     background-color: #2C70AE;
     padding: 1%;
@@ -199,7 +199,7 @@ main{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 }
 
-.mana-button image {
+.mana-button img {
     vertical-align: middle;
     display: table-cell;
 }
@@ -214,7 +214,7 @@ main{
     font-size: 30px;
     width: 100%;
     height: auto;
-    text-align: left;
+    text-align: justify;
     color: #FFFFFF;
     background-color: #2E9DA6;
     padding: 1%;
@@ -235,7 +235,7 @@ main{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 }
 
-.magic-ball-button image {
+.magic-ball-button img {
     vertical-align: middle;
     display: table-cell;
 }

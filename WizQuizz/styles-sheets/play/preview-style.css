@@ -4,8 +4,8 @@
 }
 
 main {
-    padding-top: 150px;
-    padding-bottom: 40px;
+    padding-top: 170px;
+    padding-bottom: 60px;
 }
 
 .preview {
@@ -104,8 +104,9 @@ main {
 
 .num-of-question {
     border: 1px solid rgba(0, 0, 0, 0.7);
-    background-color: #FFFFFF;
-    color: #22242A;
+    background-color: #7B2CBF;
+    color: #FFFFFF;
+    text-shadow: 0 0 2px #000000;
     border-radius: 100px;
     padding: 5px;
     margin-left: 4px;
@@ -114,7 +115,7 @@ main {
 
 .answers {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     padding: 5px;
     margin-top: 5px;
     border-radius: 4px;
@@ -128,12 +129,13 @@ main {
 
 .cauldron-button {
     font-family: "Roboto Thin", sans-serif;
-    width: 210px;
+    width: 100%;
     height: auto;
     text-align: left;
     color: #FFFFFF;
     background-color: #D5546D;
     padding: 10px;
+    margin-bottom: 10px;
     border-radius: 4px;
     cursor: pointer;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -145,7 +147,13 @@ main {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 }
 
-.cauldron-button image {
+.cauldron-button:focus {
+    outline: none;
+    background-color: #e22a4c;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.cauldron-button img {
     vertical-align: middle;
     display: table-cell;
 }
@@ -157,12 +165,13 @@ main {
 
 .mage-staff-button {
     font-family: "Roboto Thin", sans-serif;
-    width: 210px;
+    width: 100%;
     height: auto;
     text-align: left;
     color: #FFFFFF;
     background-color: #EFA928;
     padding: 10px;
+    margin-bottom: 10px;
     border-radius: 4px;
     cursor: pointer;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -174,7 +183,13 @@ main {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 }
 
-.mage-staff-button image {
+.mage-staff-button:focus {
+    outline: none;
+    background-color: #e49604;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.mage-staff-button img {
     vertical-align: middle;
     display: table-cell;
 }
@@ -186,12 +201,13 @@ main {
 
 .mana-button {
     font-family: "Roboto Thin", sans-serif;
-    width: 210px;
+    width: 100%;
     height: auto;
     text-align: left;
     color: #FFFFFF;
     background-color: #2C70AE;
     padding: 10px;
+    margin-bottom: 10px;
     border-radius: 4px;
     cursor: pointer;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -203,7 +219,13 @@ main {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 }
 
-.mana-button image {
+.mana-button:focus {
+    outline: none;
+    background-color: #0e88fa;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.mana-button img {
     vertical-align: middle;
     display: table-cell;
 }
@@ -215,7 +237,7 @@ main {
 
 .magic-ball-button {
     font-family: "Roboto Thin", sans-serif;
-    width: 210px;
+    width: 100%;
     height: auto;
     text-align: left;
     color: #FFFFFF;
@@ -232,7 +254,13 @@ main {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 }
 
-.magic-ball-button image {
+.magic-ball-button:focus {
+    outline: none;
+    background-color: #22d2df;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.magic-ball-button img {
     vertical-align: middle;
     display: table-cell;
 }
