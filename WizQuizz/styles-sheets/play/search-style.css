@@ -12,9 +12,8 @@
     display: flex;
 }
 
-.asidenav {
+aside {
     padding-top: 100px;
-    padding-bottom: 20px;
     background-color: #4B2D56;
 }
 
@@ -46,13 +45,17 @@
     cursor: pointer;
 }
 
-.quizzselection {
+.quizz-selection {
     padding-top: 170px;
     padding-bottom: 90px;
     padding-inline: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.quizz-selection a {
+    text-decoration: none;
 }
 
 .quizz {
@@ -64,10 +67,6 @@
     background-color: #9F77C6;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.quizzselection a {
-    text-decoration: none;
 }
 
 .quizz h2 {

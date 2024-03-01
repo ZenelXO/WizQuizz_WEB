@@ -34,6 +34,6 @@ Promise.all([
     loadJSON('../../data/home/news_content.json')
 ])
     .then(([whoData, newsData]) => {
-        renderContent(whoData.content, '.about-us-content');
-        renderContent(newsData.content, '.news-content');
+        renderContent(whoData.info, '.about-us-content');
+        renderContent(newsData.news, '.news-content');
     });
