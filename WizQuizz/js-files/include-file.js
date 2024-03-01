@@ -1,4 +1,3 @@
-// https://stackoverflow.com/questions/40162907/w3includehtml-sometimes-includes-twice
 function IncludeFile() {
     let z, i, a, file, xhttp;
 

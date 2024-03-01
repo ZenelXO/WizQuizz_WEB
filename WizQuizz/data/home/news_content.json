@@ -1,0 +1,19 @@
+{
+  "content": [
+    {
+      "image": "../../website-images/common/sample-news-image.png",
+      "headline": "Headline 1",
+      "description": "Description 1"
+    },
+    {
+      "image": "../../website-images/common/sample-news-image.png",
+      "headline": "Headline 2",
+      "description": "Description 2"
+    },
+    {
+      "image": "../../website-images/common/sample-news-image.png",
+      "headline": "Headline 3",
+      "description": "Description 3"
+    }
+  ]
+}
