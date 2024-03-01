@@ -17,20 +17,15 @@
         <div class="container">
             <div class="preview">
                 <div class="loadimages">
-                    <img src="../../website-images/common/sample-news-image.png" width="300" height="200">
-                    <a href=""><input class="header-button" type="button" value="+ Add Image"></a>
+                    <div class="images">
+                        <img src="../../website-images/common/sample-news-image.png" width="300" height="200">
+                        <a href=""><input class="header-button" type="button" value="+ Add Image"></a>
+                    </div>
+                    
+                    <div class="quizdescription">
+                        <textarea id="questionTittle" class="description" placeholder="Question Tittle"></textarea>
+                    </div>
                 </div>
-                <div class="quizdescription">
-                    <h1>Question Title</h1>
-                    <p>Grandioso por igual en sus concepciones pictóricas, escultóricas y arquitectónicas, Miguel Ángel es la figura culminante
-                    del Cinquecento y uno de los mayores genios de la historia del arte. Más allá de la serenidad y la belleza renacentista,
-                    el artista italiano imprimió a sus obras aquel formidable vigor expresivo que ya sus contemporáneos llamarían terribilita.</p>
-                    <p>En estas secciones intentamos profundizar en el conocimiento de algunas personalidades mediante biografías más amplias y estudios extensos sobre sus aportaciones,
-                    acompañados de interesantes elementos multimedia (fotos, vídeos, tablas, ilustraciones). En las Monografías reunimos biografías y estudios de figuras claves de la
-                    historia, mientras que en los Reportajes incluiremos a los protagonistas de la más reciente actualidad.
-                    </p>
-                </div>
-
 
                 <div class="numofquestion">
                     <h1>01</h1>
@@ -38,43 +33,33 @@
             </div>
 
 
-            <div class="quizquestions">
-                <div class="answers">
-                    <button class="cauldron-button"><span><img src="../../website-images/answer-options/cauldron-x45.png"></span><span>Soy la respuesta numero 1 y soy la más larga porque a mi me apetece. Es lo que hay mi loco hay que a veces ceder a la vida.</span></button>
-                    <button class="mage-staff-button"><span><img src="../../website-images/answer-options/mage-staff-x45.png"></span><span>Yo soy enana.</span></button>
-                    <button class="mana-button"><span><img src="../../website-images/answer-options/mana-x45.png"></span><span>Sí.</span></button>
-                    <button class="magic-ball-button"><span><img src="../../website-images/answer-options/magic-ball-x45.png"></span><span>Vale parece que el texto no resulta en un problema. Probemos con una segunda respuesta muy larga a ver que hace la página. jajajaj que buena esa xd</span></button>
-                </div>
-                <!--
-                <div class="numberofcorrects">
-                <input type="radio" id="one" name="corrects" value="Only 1 correct" class="radio">
-                <label class="label label1" for="one">Only 1 correct</label>
-                <input type="radio" id="multi" name="corrects" value="A lot of corrects" class="radio" checked>
-                <label class="label label2" for="multi">A lot of corrects</label>
-                </div>
-                -->
+            <div id="quizquestions" class="quizquestions">
+                <form id="answers" class="answers">
+                    <button type="button" class="cauldron-button"><span><img src="../../website-images/answer-options/cauldron-x45.png"></span><input id="answer1" class="answer" placeholder="Write the answer 1"></button>
+                    <button type="button" class="mage-staff-button"><span><img src="../../website-images/answer-options/mage-staff-x45.png"></span><input id="answer2" class="answer" placeholder="Write the answer 2"></button>
+                    <button type="button" class="mana-button"><span><img src="../../website-images/answer-options/mana-x45.png"></span><input id="answer3" class="answer" placeholder="Write the answer 3"></button>
+                    <button type="button" class="magic-ball-button"><span><img src="../../website-images/answer-options/magic-ball-x45.png"></span><input id="answer4" class="answer" placeholder="Write the answer 4"></button>
+                </form>
 
                 <div class="allbuttons">
                     <div class="removebuttons">
                         <a href=""><input class="header-button" type="button" value="Delete Question"></a>
                     </div>
                     <div class="editbuttons">
-                        <div class="editbuttons1">
-                            <a href=""><input class="header-button" type="button" value="Remove Answer (2/4)"></a>
-                        </div>
                         <div class="editbuttons2">
-                            <a href=""><input class="header-button" type="button" value="Add Answer (2/4)"></a>
+                            <a href=""><input class="header-button" id="submit" type="submit" value="Add Answer"></a>
                         </div>
                         <div class="editbuttons3">
-                            <a href=""><input class="header-button" type="button" value="Finish Question"></a>
+                            <a href="quizz-create.html"><input class="header-button" type="button" value="Finish Question"></a>
                         </div>
                     </div>
                 </div>
-            </div>
+             </div>
         </div>
     </body>
 
     <footer include-file="../common/footer.html"></footer>
     
     <script>IncludeFile()</script>
+    <script src="create2.js"></script>
 </html>

@@ -98,6 +98,207 @@ fieldset{
     margin-left: 100px;
 }
 
+.quizdescription .submit{
+    margin-top: 1%;
+    color: #FFFFFF;
+    background-color: green;
+}
+
+.quizz-questions {
+    margin-inline: 30%;
+    margin-top: 3%;
+}
+
+.question {
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 30px;
+    background-color: #8D77C6;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.question-info {
+    display: flex;
+    align-items: flex-start;
+}
+
+.question-info p {
+    text-align: justify;
+    font-family: Arial, sans-serif;
+    color: #FFFFFF;
+    margin-inline: 4px;
+    margin-bottom: 4px;
+}
+
+.num-of-question {
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    background-color: #7B2CBF;
+    color: #FFFFFF;
+    text-shadow: 0 0 2px #000000;
+    border-radius: 100px;
+    padding: 5px;
+    margin-left: 4px;
+    align-self: flex-start;
+}
+
+.answers {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #ebaeff;
+}
+
+.answers img {
+    padding-right: 10px;
+}
+
+.cauldron-button {
+    font-family: "Roboto Thin", sans-serif;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    color: #FFFFFF;
+    background-color: #D5546D;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.cauldron-button:hover {
+    background-color: #EA677E;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.cauldron-button:focus {
+    outline: none;
+    background-color: #e22a4c;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.cauldron-button img {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.cauldron-button span {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.mage-staff-button {
+    font-family: "Roboto Thin", sans-serif;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    color: #FFFFFF;
+    background-color: #EFA928;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.mage-staff-button:hover {
+    background-color: #F8C059;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.mage-staff-button:focus {
+    outline: none;
+    background-color: #e49604;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.mage-staff-button img {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.mage-staff-button span {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.mana-button {
+    font-family: "Roboto Thin", sans-serif;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    color: #FFFFFF;
+    background-color: #2C70AE;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.mana-button:hover {
+    background-color: #559DE1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.mana-button:focus {
+    outline: none;
+    background-color: #0e88fa;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.mana-button img {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.mana-button span {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.magic-ball-button {
+    font-family: "Roboto Thin", sans-serif;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    color: #FFFFFF;
+    background-color: #2E9DA6;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.magic-ball-button:hover {
+    background-color: #36B9C2;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.magic-ball-button:focus {
+    outline: none;
+    background-color: #22d2df;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.magic-ball-button img {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.magic-ball-button span {
+    vertical-align: middle;
+    display: table-cell;
+}
+
 .quizquestions{
     text-align: center;
     background-color:#D1AFFD;
@@ -116,7 +317,7 @@ fieldset{
 }
 
 .question{
-    background-color:gray;
+    background-color:#9F77C6;
     border-radius: 10px;
     border-style: solid;
     border-color: #22242A;
