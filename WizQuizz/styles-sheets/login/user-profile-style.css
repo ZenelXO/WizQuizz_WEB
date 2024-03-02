@@ -45,6 +45,9 @@ main {
     height: 200px;
 	width: 200px;
 
+	min-width: 200px;
+	min-height: 200px;
+
 	margin-left: 0;
 	margin-right: 5%;
 	
@@ -55,7 +58,7 @@ main {
 	align-items: left;
 }
 
-.user-image-container img{
+.user-image-container input{
 	display: block;
 	width: auto;
 	height: 80%;
@@ -130,4 +133,8 @@ main {
 
 .user-image-container:hover{
 	background-color: blueviolet;
+}
+
+#image-input-file{
+	display: none;
 }
