@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+main {
+	font-size: 15px;
+	padding-top: 12%;
+}
+
+.user-box{
+	margin: 0 20%;
+}
+
+.main-user-info{
+	display: flex;
+	width: 100%;
+	align-items: left;
+	vertical-align: middle;
+}
+
+.nickname {
+	margin-left: 1%;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.nickname h1{
+	width: auto;
+	height: 100%;
+
+	margin: auto;
+
+	color: #000000;
+    text-decoration: none;
+	font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-size: 60px;
+}
+
+.user-image-container{
+	position: relative;
+    height: 200px;
+	width: 200px;
+
+	min-width: 200px;
+	min-height: 200px;
+
+	margin-left: 0;
+	margin-right: 5%;
+	
+    overflow: hidden;
+	border-radius: 50%;
+    background-color: rgb(133, 133, 133);
+	display: flex;
+	align-items: left;
+}
+
+.user-image-container input{
+	display: block;
+	width: auto;
+	height: 80%;
+	margin: auto;
+	text-align: center;
+}
+
+.description{
+	margin-top: -2%;
+	padding: 4%;
+	padding-left: 6%;
+	border-radius: 15px;
+	background-color: rgb(208, 174, 240);
+}
+
+.description p{
+	color: #000000;
+    text-decoration: none;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: left;
+}
+
+.additional-info{
+	display: flex;
+	
+	margin-top: 2%;
+	margin-bottom: 5%;
+}
+
+.account-creation-date{
+	display: inline-block;
+	width: 40%;
+	
+	padding: 2%;
+
+	border-radius: 15px;
+	background-color: rgb(208, 174, 240);
+	text-align: center;
+
+	color: #000000;
+    text-decoration: none;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.quizs-finished{
+	display: inline-block;
+	width: 40%;
+
+	margin-left: auto;
+	margin-right: 0;
+	text-align: center;
+
+	padding: 2%;
+
+	border-radius: 15px;
+	background-color: rgb(208, 174, 240);
+
+	color: #000000;
+    text-decoration: none;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+#user-image-button{
+	background: transparent;
+    border: none !important;
+    font-size:0;
+	cursor: pointer;
+}
+
+.user-image-container:hover{
+	background-color: blueviolet;
+    box-shadow: 0 0 15px purple;
+}
+
+#image-input-file{
+	display: none;
+}
