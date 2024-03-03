@@ -20,7 +20,7 @@ main {
 }
 
 .nickname {
-	margin-left: 10%;
+	margin-left: 5%;
 	margin-right: auto;
 	margin-top: auto;
 	margin-bottom: auto;
@@ -124,7 +124,7 @@ main {
     font-size: 15px;
 }
 
-.user-image-button{
+#user-image-button{
 	background: transparent;
     border: none !important;
     font-size:0;
@@ -133,6 +133,7 @@ main {
 
 .user-image-container:hover{
 	background-color: blueviolet;
+    box-shadow: 0 0 15px purple;
 }
 
 #image-input-file{
