@@ -24,6 +24,9 @@ main {
 }
 
 .quizz-info img {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #6E1EB4;
+    padding: 3px;
     vertical-align: middle;
     display: table-cell;
 }
@@ -90,13 +93,14 @@ main {
 }
 
 .question-info {
+    align-items: center;
     display: flex;
-    align-items: flex-start;
 }
 
 .question-info p {
     text-align: justify;
     font-family: Arial, sans-serif;
+    flex: max-content;
     color: #FFFFFF;
     margin-inline: 4px;
     margin-bottom: 4px;
