@@ -39,15 +39,12 @@ main{
 
 .questionNumber{
     border: 1px solid rgba(0, 0, 0, 0.7);
-    background-color: #FFFFFF;
-    color: #22242A;
-    border-radius: 100px;
-    position: absolute;
-    left: 91%;
-    bottom: 86%;
-    padding: 1%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #7B2CBF;
+    color: #FFFFFF;
+    text-shadow: 0 0 2px #000000;
     border-radius: 50%;
+    padding: 0.7%;
+    align-self: flex-start;
 }
 
 .next-question{
