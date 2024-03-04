@@ -35,12 +35,20 @@ async function loadJSON(file) {
 
 function renderContent(content, containerSelector) {
     const container = document.querySelector(containerSelector);
+    let count_news = 0;
     content.forEach(item => {
         const div = document.createElement('div');
         if (containerSelector === '.about-us-content') {
             div.classList.add('about-us-info');
-            div.innerHTML = `<img src="${item.image}" width="320" height="180" class="image" alt="">
-                             <p>${item.text}</p>`;
+            if (count_news % 2 === 0) {
+                div.innerHTML = `<img src="${item.image}" width="320" height="180" class="image" alt="">
+                                <p>${item.text}</p>`;
+                count_news++;
+            } else {
+                div.innerHTML = `<p>${item.text}</p>
+                                <img src="${item.image}" width="320" height="180" class="image" alt="">`;
+                count_news++;
+            }
         } else if (containerSelector === '.news-content') {
             div.classList.add('new');
             div.innerHTML = `<a href=""><img src="${item.image}" width="640" height="360" class="image" alt=""></a>
