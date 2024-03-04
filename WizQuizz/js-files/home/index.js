@@ -39,13 +39,12 @@ function renderContent(content, containerSelector) {
     content.forEach(item => {
         const div = document.createElement('div');
         if (containerSelector === '.about-us-content') {
+            div.classList.add('about-us-info');
             if (count_news % 2 === 0) {
-                div.classList.add('about-us-info');
                 div.innerHTML = `<img src="${item.image}" width="320" height="180" class="image" alt="">
                                 <p>${item.text}</p>`;
                 count_news++;
             } else {
-                div.classList.add('about-us-info');
                 div.innerHTML = `<p>${item.text}</p>
                                 <img src="${item.image}" width="320" height="180" class="image" alt="">`;
                 count_news++;
