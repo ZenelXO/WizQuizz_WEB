@@ -34,6 +34,9 @@ function fadeOutAudio(audio, duration) {
 document.addEventListener('DOMContentLoaded', function() {
     const buttons = document.querySelectorAll('.answers button:not(.next-question)');
     const correctButton = document.getElementById("correct-answer");
+    //UNICO CAMBIO
+    var results = 0;
+    var numofquestions = 0;
 
     buttons.forEach(button => {
         button.style.transition = 'background-color 2s ease';
@@ -58,6 +61,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 correct.volume = 0.9;
                 fadeOutAudio(correct, 3000);
                 correct.play().then(r => fadeOutAudio(incorrect, 3000));
+                //UNICO CAMBIO PAPA
+                results++;
             } else {
                 correctButton.style.backgroundColor = '#28fc64';
                 button.style.backgroundColor = '#FF3333';
@@ -65,6 +70,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 incorrect.volume = 0.9;
                 incorrect.play().then(r => fadeOutAudio(incorrect, 3000));
             }
+            //UNICO CAMBIO PAPA
+            numofquestions++;
+            localStorage.setItem("numofquestions", numofquestions);
+            localStorage.setItem("results", results);
         });
     });
 });

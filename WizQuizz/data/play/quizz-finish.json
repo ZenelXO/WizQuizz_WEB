@@ -1,0 +1,15 @@
+{
+    "finish":
+    {"result-well": "Congratulations",
+    "result-bad" : "tusmuertos"
+    },
+    
+    "description":
+    {"info" : "aksjhubduaogdoagsipdgaisdgpaigdpiuawgpdiwag"
+    },
+
+    "result":
+    {"10" : "10/10",
+    "0" : "0/10"
+    }
+}
