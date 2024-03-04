@@ -38,7 +38,7 @@ main {
 }
 
 .additional-info {
-    font-family: 'Arial Black', sans-serif;
+    font-family: Poppins, serif;
     color: #FFFFFF;
     text-shadow: 0 0 2px #000000;
 }
@@ -61,6 +61,11 @@ main {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
 }
 
+.quizz-description {
+    display: flex;
+    flex-direction: column;
+}
+
 .quizz-description h1 {
     font-family: 'Harry Potter', sans-serif;
     color: #73F6D0;
@@ -70,17 +75,18 @@ main {
 
 .quizz-description p {
     text-align: justify;
-    font-family: Arial, sans-serif;
+    flex: max-content;
+    font-family: Poppins, serif;
     color: #FFFFFF;
     border-radius: 4px;
     padding: 10px;
-    background-color: #9F77C6;
+    background-color: rgba(159, 119, 198, 0.65);
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .quizz-questions {
-    margin-inline: 30%;
+    margin-inline: 15%;
 }
 
 .question {
@@ -99,7 +105,7 @@ main {
 
 .question-info p {
     text-align: justify;
-    font-family: Arial, sans-serif;
+    font-family: Poppins, serif;
     flex: max-content;
     color: #FFFFFF;
     margin-inline: 4px;
@@ -132,7 +138,7 @@ main {
 }
 
 .cauldron-button {
-    font-family: "Roboto Thin", sans-serif;
+    font-family: Poppins, serif;
     width: 100%;
     height: auto;
     text-align: left;
@@ -168,7 +174,7 @@ main {
 }
 
 .mage-staff-button {
-    font-family: "Roboto Thin", sans-serif;
+    font-family: Poppins, serif;
     width: 100%;
     height: auto;
     text-align: left;
@@ -204,7 +210,7 @@ main {
 }
 
 .mana-button {
-    font-family: "Roboto Thin", sans-serif;
+    font-family: Poppins, serif;
     width: 100%;
     height: auto;
     text-align: left;
@@ -240,7 +246,7 @@ main {
 }
 
 .magic-ball-button {
-    font-family: "Roboto Thin", sans-serif;
+    font-family: Poppins, serif;
     width: 100%;
     height: auto;
     text-align: left;
