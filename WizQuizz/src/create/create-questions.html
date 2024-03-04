@@ -18,13 +18,11 @@
             <div class="preview">
                 <div class="loadimages">
                     <div class="images">
-                        <img src="../../website-images/common/sample-news-image.png" width="300" height="200">
+                        <img src="../../website-images/common/sample-news-image.png" width="350" height="250">
                         <a href=""><input class="header-button" type="button" value="+ Add Image"></a>
                     </div>
                     
-                    <div class="quizdescription">
-                        <textarea id="questionTittle" class="description" placeholder="Question Tittle"></textarea>
-                    </div>
+                    <textarea id="questionTittle" class="description" placeholder="Question Tittle"></textarea>
                 </div>
 
                 <div class="numofquestion">
@@ -32,24 +30,21 @@
                 </div>
             </div>
 
-
             <div id="quizquestions" class="quizquestions">
-                <form id="answers" class="answers">
-                    <button type="button" class="cauldron-button"><span><img src="../../website-images/answer-options/cauldron-x45.png"></span><input id="answer1" class="answer" placeholder="Write the answer 1"></button>
-                    <button type="button" class="mage-staff-button"><span><img src="../../website-images/answer-options/mage-staff-x45.png"></span><input id="answer2" class="answer" placeholder="Write the answer 2"></button>
-                    <button type="button" class="mana-button"><span><img src="../../website-images/answer-options/mana-x45.png"></span><input id="answer3" class="answer" placeholder="Write the answer 3"></button>
-                    <button type="button" class="magic-ball-button"><span><img src="../../website-images/answer-options/magic-ball-x45.png"></span><input id="answer4" class="answer" placeholder="Write the answer 4"></button>
-                </form>
-
-                <div class="allbuttons">
-                    <div class="removebuttons">
-                        <a href=""><input class="header-button" type="button" value="Delete Question"></a>
-                    </div>
-                    <div class="editbuttons">
-                        <div class="editbuttons2">
-                            <a href=""><input class="header-button" id="submit" type="submit" value="Add Answer"></a>
+                <div class="infocontainer">
+                    <form id="answers" class="answers">
+                        <button type="button" class="cauldron-button"><span><img src="../../website-images/answer-options/cauldron-x45.png"></span><input id="answer1" class="answer" placeholder="Write the answer 1"></button>
+                        <button type="button" class="mage-staff-button"><span><img src="../../website-images/answer-options/mage-staff-x45.png"></span><input id="answer2" class="answer" placeholder="Write the answer 2"></button>
+                        <button type="button" class="mana-button"><span><img src="../../website-images/answer-options/mana-x45.png"></span><input id="answer3" class="answer" placeholder="Write the answer 3"></button>
+                        <button type="button" class="magic-ball-button"><span><img src="../../website-images/answer-options/magic-ball-x45.png"></span><input id="answer4" class="answer" placeholder="Write the answer 4"></button>
+                    </form>
+    
+                    <div class="allbuttons">
+                        <div class="removebuttons">
+                            <a href=""><input class="header-button" type="button" value="Delete Question"></a>
                         </div>
-                        <div class="editbuttons3">
+                        <div class="editbuttons">
+                            <a href=""><input class="header-button" id="submit" type="submit" value="Add Answer"></a>
                             <a href="quizz-create.html"><input class="header-button" type="button" value="Finish Question"></a>
                         </div>
                     </div>
@@ -59,7 +54,6 @@
     </body>
 
     <footer include-file="../common/footer.html"></footer>
-    
     <script>IncludeFile()</script>
     <script src="create2.js"></script>
 </html>

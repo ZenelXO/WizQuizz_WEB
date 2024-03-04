@@ -1,124 +1,97 @@
 *{
     padding: 0;
     margin: 0;
-    }
+}
     
-    
-    .container{
+.container{
     margin-top: 7%;
     margin-bottom: 5%;
-    }
-    
-    
-    .quizquestions .header-button{
-    border-radius: 20px;
-    }
-    
-    .preview{
-        display: flex;
-        background-color:#9F77C6;
-        padding: 2%;
-        margin: 5%;
-        border-radius: 60px;
-    }
-    
-    .preview .loadimages{
-        margin-right: auto;
-        display: flex;
-        text-align: center;
-    }
+}
 
-    .quizdescription textarea{
-        height: 100%;
-        font-size: 30px;
-        text-align: center;
-        background-color: inherit;
-        border-radius: 10px;
-        border-color: #22242A;
-    }
+.quizquestions .header-button{
+    border-radius: 04px;
+}
 
-    .quizdescription textarea::placeholder{
-        color: black;
-    }
-    
-    .preview .numofquestion{
-    background-color: white;
-    color: #22242A;
-    border-radius: 100px;
-    padding: 0.5%;
-    height: 1%;
-    width: 3%;
-    text-align: center;
+.preview{
     display: flex;
-    justify-content: end;
-    justify-content: center;
-    align-items: end;
-    }
+    background-color:#9F77C6;
+    padding: 2%;
+    margin: 5%;
+    border-radius: 60px;
+}
 
-    .loadimages input{
+.loadimages{
+    width: 100%;
+}
+
+.preview .loadimages{
+    margin-right: auto;
+    display: flex;
+    text-align: center;
+}
+
+.images{
+    margin: 0;
+}
+
+.description{
+    height: 100%;
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    background-color: inherit;
+    border-radius: 10px;
+    border-color: #22242A;
+}
+
+textarea::placeholder{
+    color: black;
+}
+
+.preview .numofquestion{
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    background-color: #7B2CBF;
+    color: #FFFFFF;
+    text-shadow: 0 0 2px #000000;
+    border-radius: 100px;
+    padding: 5px;
+    margin-left: 20px;
+    align-self: flex-start;
+}
+
+.loadimages input{
     margin-top: 10%;
     width: 60%;
-    }
-    
-    
-    .quizdescription{
-    margin-left: 2%;
-    }
+}
 
-    .quizdescription .quizztitle{
-        color: #22242A;
-        font-size: 30px;
-        cursor: pointer;
-    }
-    
-    
-    .quizdescription h1{
-    font-family: 'Harry Potter', sans-serif;
-    }
-    
-    
-    .quizdescription p{
-    font-family: sans-serif;
-    }
-    
-    
-    .quizquestions{
+.quizquestions{
     text-align: center;
     background-color:#9F77C6;
     padding: 2%;
     margin: 5%;
     border-radius: 60px;
     margin-top: -2.5%;
-    }
-    
-    
-    .quizquestions p{
+}
+
+.quizquestions p{
     margin: 30px;
     display: inline-block;
-    }
-    
-    
-    .quizquestions input{
-    /*Para editar el estilo de los inputs en el cuadro*/
-    }
-    
-    
-    .question{
+}
+
+.question{
     background-color:gray;
     border-radius: 10px;
     border-style: solid;
     border-color: #22242A;
     padding: 2.3%;
     text-align: center;
-    }
-    
-    
-    .question input{
+}
+
+.question input{
     text-align: center;
-    }
-    
-    
-    .answerBox{
+}
+
+.answerBox{
     font-family: Arial, sans-serif;
     font-size: 40px;
     margin: 3%;
@@ -127,10 +100,9 @@
     flex-direction: column;
     padding: 2%;
     border-radius: 50px;
-    }
-    
-    
-    .answers {
+}
+
+.answers {
     display: flex;
     flex-direction: column;
     padding: 0.5%;
@@ -138,19 +110,18 @@
     border-radius: 4px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: #ebaeff;
-    }
-    
-    .answers .answer{
-        width: 100%;
-        font-size: 30px;
-    }
+}
 
-    .answers img {
+.answers .answer{
+    width: 100%;
+    font-size: 30px;
+}
+
+.answers img {
     padding-right: 10px;
-    }
-    
-    
-    .cauldron-button {
+}
+
+.cauldron-button {
     display: flex;
     align-items: center;
     font-family: "Roboto Thin", sans-serif;
@@ -166,21 +137,19 @@
     cursor: pointer;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    }
-    
-    .cauldron-button image {
+}
+
+.cauldron-button image {
     vertical-align: middle;
     display: table-cell;
-    }
-    
-    
-    .cauldron-button span {
+}
+
+.cauldron-button span {
     vertical-align: middle;
     display: table-cell;
-    }
-    
-    
-    .mage-staff-button {
+}
+
+.mage-staff-button {
     display: flex;
     align-items: center;
     font-family: "Roboto Thin", sans-serif;
@@ -196,20 +165,19 @@
     cursor: pointer;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    }
-    
-    .mage-staff-button image {
+}
+
+.mage-staff-button image {
     vertical-align: middle;
     display: table-cell;
-    }
-    
-    
-    .mage-staff-button span {
+}
+
+.mage-staff-button span {
     vertical-align: middle;
     display: table-cell;
-    }
-    
-    .mana-button {
+}
+
+.mana-button {
     display: flex;
     align-items: center;
     font-family: "Roboto Thin", sans-serif;
@@ -225,21 +193,20 @@
     cursor: pointer;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    }
-    
-    .mana-button image {
+}
+
+.mana-button image {
     vertical-align: middle;
     display: table-cell;
-    }
-    
-    
-    .mana-button span {
+}
+
+
+.mana-button span {
     vertical-align: middle;
     display: table-cell;
-    }
-    
-    
-    .magic-ball-button {
+}
+
+.magic-ball-button {
     display: flex;
     align-items: center;
     font-family: "Roboto Thin", sans-serif;
@@ -254,101 +221,69 @@
     cursor: pointer;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    }
-    
-    .magic-ball-button image {
+}
+
+.magic-ball-button image {
     vertical-align: middle;
     display: table-cell;
-    }
-    
-    
-    .magic-ball-button span {
+}
+
+.magic-ball-button span {
     vertical-align: middle;
     display: table-cell;
-    }
-    
-    
-    .infoanswer{
+}
+
+.infoanswer{
     margin-top: 1%;
     text-align: center;
-    }
-    
-    
-    .infoanswer p{
+}
+
+.infoanswer p{
     font-family: sans-serif;
-    }
-    
-    
-    .allbuttons{
+}
+
+.allbuttons{
     margin-top: 2%;
     display: flex;
     justify-content: space-between;
-    }
-    
-    
-    .removebuttons input{
+    margin-right: 1.5%;
+}
+
+.removebuttons input{
     width: 100%;
-    }
-    
-    
-    .editbuttons{
+    margin-left: 0;
+}
+
+.editbuttons{
     display: flex;
-    }
-    
-    
-    .editbuttons div{
-    margin-left: 1%;
-    }
-    
-    
-    .editbuttons input{
+}
+
+.editbuttons a{
+    margin-left: 3%;
+}
+
+.editbuttons input{
     width: 100%;
-    }
-    
-    
-    .numberofcorrects{
-    margin-top: 1%;
-    display: flex;
-    }
-    
-    
-    .numberofcorrects input{
+}
+
+.radio{
     display: none;
-    }
-    
-    
-    .radio{
-    display: none;
-    }
-    
-    
-    .numberofcorrects label{
-    padding: 5px 10px;
-    margin-inline: 0.5%;
-    background-color: #888;
-    color: white;
-    cursor: pointer;
-    font-size: 18px;
-    border-radius: 40px;
-    }
-    
-    
-    #one:checked + .label1,
-    #multi:checked + .label2
-    {
+}
+
+#one:checked + .label1,
+#multi:checked + .label2
+{
     background-color: purple;
     box-shadow: 0 3px rgba(0, 0, 0, 0.2);
-    }
-    
-    
-    .addquestion{
+}
+
+.addquestion{
     margin-top: 0.4%;
     display: flex;
     justify-content: center;
-    }
-    
-    
-    .add{
+}
+
+.add{
     font-family: "Roboto Thin", sans-serif;
     font-size: 20px;
     width: 250px;
@@ -360,5 +295,4 @@
     border-radius: 4px;
     cursor: pointer;
     border: none;
-    }
-    
+}
