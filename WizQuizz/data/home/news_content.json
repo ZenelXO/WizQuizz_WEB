@@ -1,17 +1,17 @@
 {
   "news": [
     {
-      "image": "https://img.freepik.com/free-vector/game-background-with-magic-maya-altar-jungle_107791-19342.jpg",
+      "image": "../../website-images/home/altar.jpg",
       "headline": "Headline 1",
       "description": "Description 1"
     },
     {
-      "image": "https://img.freepik.com/premium-photo/magic-forest-2d-background-environment-mobile-game-high-quality-horizontal-background-landscape-gaming-template-design-location-generative-ai_159242-19429.jpg",
+      "image": "../../website-images/home/magic-house.jpg",
       "headline": "Headline 2",
       "description": "Description 2"
     },
     {
-      "image": "https://png.pngtree.com/background/20230410/original/pngtree-forest-path-cartoon-purple-background-picture-image_2383539.jpg",
+      "image": "../../website-images/home/magic-tree.jpg",
       "headline": "Headline 3",
       "description": "Description 3"
     }
