@@ -56,7 +56,6 @@ aside {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-height: 100vh;
     overflow-y: auto;
 }
 
