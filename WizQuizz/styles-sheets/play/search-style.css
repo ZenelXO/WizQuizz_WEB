@@ -13,11 +13,14 @@
 }
 
 aside {
+    display: grid;
     padding-top: 100px;
+    padding-bottom: 20px;
     background-color: #4B2D56;
 }
 
 .filter {
+    font-family: Poppins, serif;
     display: table;
     color: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -33,6 +36,7 @@ aside {
 }
 
 .filter span {
+    padding-left: 10px;
     vertical-align: middle;
     display: table-cell;
 }
@@ -52,6 +56,8 @@ aside {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-height: 100vh;
+    overflow-y: auto;
 }
 
 .quizz-selection a {
@@ -59,7 +65,7 @@ aside {
 }
 
 .quizz {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Poppins, serif;
     border-radius: 4px;
     text-align: center;
     padding: 8px;
