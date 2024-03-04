@@ -51,7 +51,7 @@ function renderContent(content, containerSelector) {
             }
         } else if (containerSelector === '.news-content') {
             div.classList.add('new');
-            div.innerHTML = `<a href=""><img src="${item.image}" width="640" height="360" class="image" alt=""></a>
+            div.innerHTML = `<a href=""><img src="${item.image}" width="560" height="315" alt=""></a>
                              <a href=""><h2>${item.headline}</h2></a>
                              <p>${item.description}</p>`;
         }

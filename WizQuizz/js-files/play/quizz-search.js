@@ -44,7 +44,7 @@ function renderContent(content, containerSelector) {
         } else if (containerSelector === '.quizz-selection') {
             div.classList.add('quizz');
             div.innerHTML = `<a href="quizz-preview.html">
-                            <img src="${item.image}" width="400" height="300" class="image">
+                            <img src="${item.image}" width="400" height="225" class="image">
                             <h2>${item.title}</h2>
                             </a>`;
         }
