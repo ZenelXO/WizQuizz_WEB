@@ -129,6 +129,12 @@ main h1 {
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.new img {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #6E1EB4;
+    padding: 3px;
+}
+
 .new h2 {
     color: #FFFFFF;
 }
@@ -150,11 +156,7 @@ main h1 {
     text-align: center;
 }
 
-.new .image {
-    width: 100%;
-}
-
-.new:hover .image {
+.new:hover img {
     opacity: 0.8;
 }
 
