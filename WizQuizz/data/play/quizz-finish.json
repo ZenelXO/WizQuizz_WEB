@@ -1,15 +1,12 @@
 {
-    "finish":
-    {"result-well": "Congratulations",
-    "result-bad" : "tusmuertos"
+    "finishQuizz":
+    {
+        "result-well": "Congratulations!",
+        "result-bad" : "Bad Luck!"
     },
     
     "description":
-    {"info" : "aksjhubduaogdoagsipdgaisdgpaigdpiuawgpdiwag"
-    },
-
-    "result":
-    {"10" : "10/10",
-    "0" : "0/10"
+    {
+        "info" : "aksjhubduaogdoagsipdgaisdgpaigdpiuawgpdiwag"
     }
 }
