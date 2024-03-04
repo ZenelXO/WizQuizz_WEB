@@ -2,6 +2,9 @@
     padding: 0;
     margin: 0;
 }
+body {
+	/* background-color: #121212; */
+}
 
 main {
 	font-size: 15px;
@@ -53,9 +56,10 @@ main {
 	
     overflow: hidden;
 	border-radius: 50%;
-    background-color: rgb(133, 133, 133);
+    background-color: #eedcee;
 	display: flex;
 	align-items: left;
+	border: 2px solid rgba(0, 0, 0);
 }
 
 .user-image-container input{
@@ -71,7 +75,8 @@ main {
 	padding: 4%;
 	padding-left: 6%;
 	border-radius: 15px;
-	background-color: rgb(208, 174, 240);
+	background-color: #D1AFFD;
+	border: 2px solid rgba(0, 0, 0);
 }
 
 .description p{
@@ -103,6 +108,7 @@ main {
     text-decoration: none;
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-size: 15px;
+	border: 2px solid rgba(0, 0, 0);
 }
 
 .quizs-finished{
@@ -122,6 +128,7 @@ main {
     text-decoration: none;
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-size: 15px;
+	border: 2px solid rgba(0, 0, 0);
 }
 
 #user-image-button{
@@ -132,7 +139,7 @@ main {
 }
 
 .user-image-container:hover{
-	background-color: blueviolet;
+	background-color: rgb(213, 177, 247);
     box-shadow: 0 0 15px purple;
 }
 
