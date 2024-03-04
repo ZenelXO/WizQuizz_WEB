@@ -75,6 +75,12 @@ aside {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+.quizz img {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #6E1EB4;
+    padding: 3px;
+}
+
 .quizz h2 {
     color: #FFFFFF;
 }
