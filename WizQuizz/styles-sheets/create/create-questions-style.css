@@ -119,32 +119,24 @@ textarea::placeholder{
     background-color: #ebaeff;
 }
 
-.answer1{
-    background-color: rgba(213, 84, 109, 0.9);
+.answer{
+    background-color: inherit;
+    border-color: inherit;
     width: 100%;
     font-size: 30px;
+    color: white;
 }
 
-.answer2{
-    background-color: rgba(239, 169, 40, 0.1);
-    width: 100%;
-    font-size: 30px;
-}
-
-.answer3{
-    background-color: rgba(44, 112, 174, 0.1);
-    width: 100%;
-    font-size: 30px;
-}
-
-.answer4{
-    background-color: rgba(46, 157, 166, 0.1);
-    width: 100%;
-    font-size: 30px;
+.answer::placeholder{
+    color: white;
 }
 
 .answers img {
     padding-right: 10px;
+}
+
+.correctanswer{
+    margin: 1%;
 }
 
 .cauldron-button {
