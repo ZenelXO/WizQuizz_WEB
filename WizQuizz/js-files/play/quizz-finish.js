@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', async function() {
         .then(data => {
             const resultWell = data.finishQuizz["result-well"];
             const resultBad = data.finishQuizz["result-bad"];
-            
+
             if(resultado >= varInteger/2){
                 mark.innerHTML = resultado + "/" + numofquestions;
             }else{
@@ -24,6 +24,11 @@ document.addEventListener('DOMContentLoaded', async function() {
             }else{
                 finish.innerHTML = resultBad;
             }
+            if(resultado === null){
+                console.log("sisisisisi")
+                mark.innerHTML = "0/0";
+            }
+            localStorage.clear();
         })
         .catch(error => {
             console.error('Error al cargar el archivo JSON:', error);
