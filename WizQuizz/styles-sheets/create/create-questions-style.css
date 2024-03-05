@@ -34,14 +34,21 @@
     margin: 0;
 }
 
+.images img{
+    border: 1px solid purple;
+    background-color: #6E1EB4;
+    padding: 3px;
+}
+
 .description{
     height: 100%;
     width: 100%;
     font-size: 30px;
-    text-align: center;
+    text-align: start;
     background-color: inherit;
     border-radius: 10px;
     border-color: #22242A;
+    margin-left: 1%;
 }
 
 textarea::placeholder{
@@ -112,7 +119,26 @@ textarea::placeholder{
     background-color: #ebaeff;
 }
 
-.answers .answer{
+.answer1{
+    background-color: rgba(213, 84, 109, 0.9);
+    width: 100%;
+    font-size: 30px;
+}
+
+.answer2{
+    background-color: rgba(239, 169, 40, 0.1);
+    width: 100%;
+    font-size: 30px;
+}
+
+.answer3{
+    background-color: rgba(44, 112, 174, 0.1);
+    width: 100%;
+    font-size: 30px;
+}
+
+.answer4{
+    background-color: rgba(46, 157, 166, 0.1);
     width: 100%;
     font-size: 30px;
 }

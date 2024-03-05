@@ -45,6 +45,9 @@
     font-size: 20px;
     width: 170px;
     height: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
     background-color: #7B2CBF;
     color: #FFFFFF;
     border-radius: 4px;
@@ -80,6 +83,9 @@
     font-size: 20px;
     background-color: rgba(159, 119, 198, 0.65);
     border-radius: 4px;
+}
+.description::placeholder{
+    color: white;
 }
 
 .quizinfo .quizdescription{
