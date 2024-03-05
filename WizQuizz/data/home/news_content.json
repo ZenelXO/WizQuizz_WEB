@@ -1,17 +1,17 @@
 {
   "news": [
     {
-      "image": "../../website-images/home/altar.jpg",
+      "image": "website-images/home/altar.jpg",
       "headline": "Headline 1",
       "description": "Description 1"
     },
     {
-      "image": "../../website-images/home/magic-house.jpg",
+      "image": "website-images/home/magic-house.jpg",
       "headline": "Headline 2",
       "description": "Description 2"
     },
     {
-      "image": "../../website-images/home/magic-tree.jpg",
+      "image": "website-images/home/magic-tree.jpg",
       "headline": "Headline 3",
       "description": "Description 3"
     }

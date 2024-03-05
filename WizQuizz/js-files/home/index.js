@@ -2,12 +2,12 @@ document.addEventListener('DOMContentLoaded', async function() {
     const header = document.querySelector('header');
     const footer = document.querySelector('footer');
 
-    header.appendChild(await loadTemplate('../common/main-header.html'));
-    footer.appendChild(await loadTemplate('../common/footer.html'));
+    header.appendChild(await loadTemplate('main-header.html'));
+    footer.appendChild(await loadTemplate('main-footer.html'));
 
     const [whoData, newsData] = await Promise.all([
-        loadJSON('../../data/home/who_content.json'),
-        loadJSON('../../data/home/news_content.json')
+        loadJSON('data/home/who_content.json'),
+        loadJSON('data/home/news_content.json')
     ]);
 
     renderContent(whoData.info, '.about-us-content');
