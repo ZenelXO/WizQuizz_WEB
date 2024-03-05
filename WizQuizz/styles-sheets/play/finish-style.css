@@ -22,7 +22,7 @@ main {
     text-align: center;
 }
 
-#quizz-description {
+#quizz-description p {
     width: 400px;
     font-family: "Arial Black", serif;
     color: #FFFFFF;
@@ -61,7 +61,7 @@ main {
     }
 }
 
-.buttons {
+.buttons-and-mark {
     margin: 5px;
     display: flex;
     flex-direction: column;
