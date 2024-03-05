@@ -83,9 +83,13 @@
     font-size: 20px;
     background-color: rgba(159, 119, 198, 0.65);
     border-radius: 4px;
+    box-sizing: border-box;
 }
 .description::placeholder{
     color: white;
+    line-height: 1.5; /* Altura de línea del placeholder */
+    white-space: normal; /* Permitir salto de línea */
+    word-wrap: break-word; /* Romper palabras largas */
 }
 
 .quizinfo .quizdescription{
