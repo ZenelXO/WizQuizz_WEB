@@ -40,15 +40,21 @@
     text-shadow: 0 2px rgba(0, 0, 0, 0.2);
 }
 
-.items2 {
+.upper{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1%;
+}
+
+.lower {
     margin-top: 0.5%;
 }
 
-.items2 a {
+.lower a {
     color: #FFFFFF;
 }
 
-.items2 a:hover {
+.lower a:hover {
     color: #73F6D0;
     text-shadow: 0 2px rgba(0, 0, 0, 0.2);
 }
@@ -57,7 +63,7 @@
     margin-bottom: 0.25%;
 }
 
-.items1, .items2, .networks {
+.items1, .lower, .networks {
     display: flex;
     align-items: center;
 }
