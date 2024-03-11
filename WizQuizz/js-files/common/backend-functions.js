@@ -26,3 +26,30 @@ export function setUserData(email, username, description, imageUrl, password){
         password: password
     });
 }
+
+export function setQuizData(id, name, description, imageUrl){
+    const app = initializeApp(firebaseConfig);
+    const db = getDatabase();
+    const reference = ref(db, "quizes/" + id);
+
+    set(reference, {
+        description: description,
+        name: name,
+        imageUrl: imageUrl,
+    });
+}
+
+export function addQuizQuestion(id, number, question, imageUrl, answer1, answer2, answer3, correctAnswer){
+    const app = initializeApp(firebaseConfig);
+    const db = getDatabase();
+    const reference = ref(db, "quizes/" + id + "/questions/" + number);
+
+    set(reference, {
+        question: question,
+        imageUrl: imageUrl,
+        answer1: answer1,
+        answer2: answer2,
+        answer3: answer3,
+        correctAnswer: correctAnswer
+    });
+}
