@@ -94,3 +94,46 @@ aside {
 .quizz:hover h2 {
     color: #ADFFDE;
 }
+
+/* Phone */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .container {
+        flex-direction: column;
+    }
+
+    aside {
+        padding-top: 120px;
+        display: flex;
+        overflow-x: auto;
+    }
+
+    .quizz-selection {
+        padding-top: 90px;
+    }
+
+    .quizz img {
+        width: 320px;
+        height: 180px;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .container {
+        flex-direction: column;
+    }
+
+    aside {
+        display: flex;
+        overflow-x: auto;
+    }
+
+    .quizz-selection {
+        padding-top: 90px;
+    }
+
+    .quizz img {
+        width: 320px;
+        height: 180px;
+    }
+}
