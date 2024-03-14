@@ -12,6 +12,9 @@ document.addEventListener('DOMContentLoaded', async function() {
 
     renderContent(filtersData.filters, 'aside');
     renderContent(quizzData.quizz, '.quizz-selection');
+
+    const hiddenElements = document.querySelectorAll('.hidden');
+    hiddenElements.forEach((el) => observer.observe(el));
 });
 
 async function loadTemplate(url) {
@@ -43,6 +46,7 @@ function renderContent(content, containerSelector) {
                          <span>${item.text}</span>`;
         } else if (containerSelector === '.quizz-selection') {
             div.classList.add('quizz');
+            div.classList.add('hidden');
             div.innerHTML = `<a href="quizz-preview.html">
                             <img src="${item.image}" width="400" height="225" class="image">
                             <h2>${item.title}</h2>
@@ -51,3 +55,14 @@ function renderContent(content, containerSelector) {
         container.appendChild(div);
     });
 }
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        } else {
+            entry.target.classList.remove('show');
+        }
+    });
+});
