@@ -8,10 +8,6 @@
     transition: .5s ease;
 }
 
-.who-content, .news-content {
-    margin-inline: 5%;
-}
-
 main h1 {
     padding-top: 170px;
     padding-bottom: 30px;
@@ -101,6 +97,7 @@ main h1 {
 }
 
 .news-content {
+    margin-inline: 5%;
     text-align: center;
     font-family: Poppins, serif;
     margin-top: 50px;
@@ -170,6 +167,19 @@ main h1 {
 
 .new:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(150px);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
 }
 
 /* Phone */
