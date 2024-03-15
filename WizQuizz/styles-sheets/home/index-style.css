@@ -135,6 +135,7 @@ main h1 {
 }
 
 .news-content {
+    display: flex;
     text-align: center;
     font-family: Poppins, serif;
     margin-top: 50px;
@@ -147,7 +148,7 @@ main h1 {
     display: flex;
     flex-direction: column;
     flex: max-content;
-    margin-inline: 15px;
+    margin-inline: 30px;
 }
 
 .news-description p {
@@ -168,7 +169,7 @@ main h1 {
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: #6E1EB4;
     padding: 3px;
-    margin-left: 15px;
+    margin-left: 30px;
 }
 
 .new h2 {
