@@ -67,6 +67,12 @@
 
 .quizinfo{
     display: flex;
+    animation: animacionEscala 1.3s;
+}
+
+@keyframes animacionEscala {
+    from {transform: translateX(-100%);}
+    to {transform: translateX(0%);}
 }
 
 .quizdescription{
@@ -331,6 +337,18 @@ fieldset{
     text-align: center;
     align-items: center;
     justify-content: center;
+    animation-name: Noanimacionquestion;
+    animation-duration: 1.3s;
+}
+
+@keyframes Noanimacionquestion {
+    from {transform: translateX(100%);}
+    to {transform: translateX(0%);}
+}
+
+.quizquestions p{
+    margin: 30px;
+    display: inline-block;
 }
 
 .noquestions{
@@ -340,15 +358,6 @@ fieldset{
     padding: 2%;
     margin-top: 4%;
     border-radius: 4px;
-}
-
-.quizquestions p{
-    margin: 30px;
-    display: inline-block;
-}
-
-.quizquestions input{
-    /*Para editar el estilo de los inputs en el cuadro*/
 }
 
 .question{
@@ -464,4 +473,111 @@ fieldset{
 .finish:hover {
     background-color: #6E1EB4;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
+}
+
+/* PHONE */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+    .container{
+        margin-top: 10%;
+        box-sizing: border-box;
+        padding-top: 100px;
+        padding: 0; 
+    }
+
+    .quizinformation{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: 100%;
+    }
+
+    .quizzcontainer{
+        width: 100%;
+        height: 100%;
+        margin-top: 10%;
+    }
+
+    .quizinfo{
+        width: 100%;
+        height: 100%;
+    }
+
+    .quizdescription{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .quizinfo .description{
+        
+    }
+    
+    .quizdescription .description{
+        margin-top: 3%;
+        text-align: left;
+        color: white;
+        height: 100%;
+        resize: none;
+        font-size: 30px;
+        background-color: rgba(159, 119, 198, 0.65);
+        border-radius: 4px;
+    }
+    .description::placeholder{
+        color: white;
+    }
+    
+    .quizinfo .quizdescription{
+        color:aqua;
+        font-family: 'Harry Potter', sans-serif;
+    }
+    
+    .quizdescription .quizztitle{
+        font-size: 70px;
+        width: 100%;
+        font-family: 'Harry Potter', sans-serif;
+        color: #73F6D0;
+        border-radius: 4px;
+        border: solid gray 1px;
+    }
+    
+    .quizztitle::placeholder{
+        color: #73F6D0;
+    }
+    
+    .quizdescription p{
+        font-family: sans-serif;
+        font-size: 1.5em;
+        color: #22242A;
+    }
+    
+    .quizdescription a{
+        margin-left: 100px;
+    }
+    
+    .quizdescription .submit{
+        margin-top: 1%;
+        color: #FFFFFF;
+        font-size: 25px;
+        background-color: green;
+    }
+
+    .quizquestions{
+        width: 100%;
+        animation-name: Noanimacionquestion;
+        animation-duration: 1.3s;
+    }
+
+    .noquestions{
+        width: 96%;
+        text-align: center;
+        background-color: #D1AFFD;
+        padding: 2%;
+        margin-top: 4%;
+        border-radius: 4px;
+    }
+}
+
+/* TABLET */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+
 }
