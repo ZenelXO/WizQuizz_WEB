@@ -1,3 +1,13 @@
+window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader");
+
+    loader.classList.add("loader-hidden");
+
+    loader.addEventListener("transitionend", () =>{
+        document.body.removeChild(loader);
+    })
+})
+
 document.addEventListener('DOMContentLoaded', async function() {
     const header = document.querySelector('header');
     const footer = document.querySelector('footer');
@@ -62,7 +72,6 @@ function renderContent(content, containerSelector) {
             }
         } else if (containerSelector === '.news-content') {
             div.classList.add('new');
-            div.classList.add('hidden')
             div.innerHTML = `<img src="${item.image}" width="560" height="315" alt=""></a>
                              <div class="news-description"><a href=""><h2>${item.headline}</h2></a>
                              <p>${item.description}</p></div>`;
