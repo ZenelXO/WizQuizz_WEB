@@ -128,7 +128,6 @@ aside {
     }
 
     aside {
-        padding-top: 120px;
         display: flex;
         overflow-x: auto;
     }
