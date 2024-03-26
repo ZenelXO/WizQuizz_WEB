@@ -5,6 +5,13 @@ document.addEventListener('DOMContentLoaded', async function() {
     header.appendChild(await loadTemplate('../common/create-header.html'));
     footer.appendChild(await loadTemplate('../common/footer.html'));
 
+    const menuIcon = document.querySelector('.mobile-bars');
+    const mobileMenu = document.querySelector('.mobile-menu');
+
+    menuIcon.addEventListener('click', function () {
+        mobileMenu.classList.toggle('show-menu');
+    });
+
     const previewData = await loadJSON('../../data/play/quizz-preview.json');
 
     renderContent(previewData.preview, '.preview');
