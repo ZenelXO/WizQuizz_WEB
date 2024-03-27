@@ -429,12 +429,13 @@ fieldset{
 }
 
 .noquestions{
-    width: 246%;
+    width: 200%;
     text-align: center;
     background-color: #D1AFFD;
     padding: 2%;
     margin-top: 4%;
     border-radius: 4px;
+    font-family: 'Poppins'; 
 }
 
 .question{
@@ -645,11 +646,13 @@ fieldset{
     }
 
     .define h1{
-        font-size: 24px;
+        font-family: 'Poppins';
+        font-size: 16px;
     }
 
     .define h2{
-        font-size: 24px;
+        font-family: 'Poppins';
+        font-size: 16px;
     }
 
     .description::placeholder{
@@ -754,6 +757,16 @@ fieldset{
 
     .noquestions{
         width: 96%;
+    }
+
+    .define h1{
+        font-family: 'Poppins';
+        font-size: 24px;
+    }
+
+    .define h2{
+        font-family: 'Poppins';
+        font-size: 24px;
     }
 
     .quizz-questions p, span{
