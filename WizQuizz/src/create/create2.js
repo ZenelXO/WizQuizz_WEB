@@ -1,4 +1,11 @@
 document.addEventListener("DOMContentLoaded", function() {
+    const menuIcon = document.querySelector('.mobile-bars');
+    const mobileMenu = document.querySelector('.mobile-menu');
+
+    menuIcon.addEventListener('click', function () {
+        mobileMenu.classList.toggle('show-menu');
+    });
+
     //Create Questions
     document.getElementById("submit").addEventListener("click", function(event) {
         event.preventDefault(); // Evitar que el formulario se envíe de forma predeterminada
