@@ -555,7 +555,7 @@ fieldset{
         height: 5em;
         color: white;
         resize: none;
-        font-size: 24px;
+        font-size: 20px;
         font-family: 'Poppins';
         background-color: rgba(159, 119, 198, 0.65);
         border-radius: 4px;
@@ -563,7 +563,7 @@ fieldset{
     
     .quizdescription .quizztitle{
         width: 100%;
-        font-size: 64px;
+        font-size: 56px;
     }
     
     .quizdescription .submit{
@@ -691,8 +691,13 @@ fieldset{
         margin-top: -10%;
     }
 
-    .noquestions{
+    .quizquestions{
+        margin-top: -5%;
         width: 100%;
+    }
+
+    .noquestions{
+        width: 96%;
     }
 
     .quizz-questions p, span{
