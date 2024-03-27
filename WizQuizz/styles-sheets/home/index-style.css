@@ -337,6 +337,7 @@ h1.show {
 
     .about-us-info {
         flex-direction: column;
+        margin-inline: 40px;
     }
 
     .about-us-info img {

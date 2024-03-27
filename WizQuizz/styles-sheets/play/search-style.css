@@ -231,7 +231,7 @@ aside {
     .quizz-selection {
         padding-top: 60px;
         padding-bottom: 60px;
-        margin-inline: 0;
+        margin-inline: 5px;
     }
 
     .quizz img {
@@ -294,7 +294,7 @@ aside {
     .quizz-selection {
         padding-top: 60px;
         padding-bottom: 60px;
-        margin-inline: 0;
+        margin-inline: 5px;
     }
 
     .quizz img {
