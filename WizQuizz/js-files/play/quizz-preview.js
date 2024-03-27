@@ -1,3 +1,13 @@
+window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader");
+
+    loader.classList.add("loader-hidden");
+
+    loader.addEventListener("transitionend", () =>{
+        document.body.removeChild(loader);
+    })
+})
+
 document.addEventListener('DOMContentLoaded', async function() {
     const header = document.querySelector('header');
     const footer = document.querySelector('footer');
@@ -16,6 +26,9 @@ document.addEventListener('DOMContentLoaded', async function() {
 
     renderContent(previewData.preview, '.preview');
     renderContent(previewData.questions, '.quizz-questions');
+
+    const hiddenElements = document.querySelectorAll('.hidden');
+    hiddenElements.forEach((el) => observer.observe(el));
 });
 
 async function loadTemplate(url) {
@@ -45,7 +58,7 @@ function renderContent(content, containerSelector) {
 
         if (containerSelector === '.preview') {
             section.classList.add('quizz-info');
-            section.innerHTML = `<img src="${item.image}" width="400" height="300">
+            section.innerHTML = `<img src="${item.image}" width="560" height="315">
                      <div class="quizz-lower-info">
                          <div class="additional-info">
                              <p>${item.author}</p>
@@ -59,6 +72,7 @@ function renderContent(content, containerSelector) {
                                 <p>${item.description}</p>`;
         } else if (containerSelector === '.quizz-questions') {
             section.classList.add('question');
+            section.classList.add('hidden');
             let answersHTML = '';
             item.answers.forEach(answer => {
                 answersHTML += `<button class="${answer.icon_name}-button"><span><img src="${answer.image}"></span><span>${answer.text}</span></button>`;
@@ -75,3 +89,14 @@ function renderContent(content, containerSelector) {
         container.appendChild(aux_section);
     });
 }
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        } else {
+            entry.target.classList.remove('show');
+        }
+    });
+});
