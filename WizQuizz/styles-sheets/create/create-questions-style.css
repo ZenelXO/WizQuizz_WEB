@@ -2,6 +2,60 @@
     padding: 0;
     margin: 0;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #9C63E3;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #8860d0;
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #DDDDDD;
+    border-top-color: #9C63E3;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+    from {
+        transform: rotate(0turn);
+    }
+    to {
+        transform: rotate(1turn);
+    }
+}
     
 .container{
     margin-top: 7%;
@@ -317,8 +371,15 @@ textarea::placeholder{
 
 /* PHONE */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+    .container{
+        margin-top: 0%;
+    }
+    
+    .prueba{
+        padding-top: 25%;
+    }
+
     .preview{
-        margin-top: 30%;
         border-radius: 30px;
     }
 
@@ -384,6 +445,14 @@ textarea::placeholder{
 
 /* TABLET */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+    .container{
+        margin-top: 0%;
+    }
+    
+    .prueba{
+        padding-top: 2%;
+    }
+
     .preview{
         margin-top: 12%;
         border-radius: 30px;
@@ -428,6 +497,10 @@ textarea::placeholder{
 
     .answers input{
         font-size: 24px;
+    }
+
+    .allbuttons .header-button{
+        display: block;
     }
 
     .allbuttons{

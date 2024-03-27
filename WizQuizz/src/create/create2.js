@@ -1,3 +1,13 @@
+window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader");
+
+    loader.classList.add("loader-hidden");
+
+    loader.addEventListener("transitionend", () =>{
+        document.body.removeChild(loader);
+    })
+})
+
 document.addEventListener("DOMContentLoaded", function() {
     const menuIcon = document.querySelector('.mobile-bars');
     const mobileMenu = document.querySelector('.mobile-menu');
