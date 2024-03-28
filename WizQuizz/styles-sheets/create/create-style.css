@@ -3,7 +3,62 @@
     margin: 0;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #9C63E3;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #8860d0;
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #DDDDDD;
+    border-top-color: #9C63E3;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+    from {
+        transform: rotate(0turn);
+    }
+    to {
+        transform: rotate(1turn);
+    }
+}
+
 .container{
+    margin-top: -5%;
     padding-top: 100px;
     background-color: white;
     height: 80%;
@@ -12,7 +67,7 @@
 }
 
 .quizinformation{
-    margin-top: 2%;
+    margin-top: 7%;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -374,12 +429,13 @@ fieldset{
 }
 
 .noquestions{
-    width: 246%;
+    width: 200%;
     text-align: center;
     background-color: #D1AFFD;
     padding: 2%;
     margin-top: 4%;
     border-radius: 4px;
+    font-family: 'Poppins'; 
 }
 
 .question{
@@ -500,49 +556,77 @@ fieldset{
 /* PHONE */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px){
     .container{
-        margin-top: 10%;
-        box-sizing: border-box;
-        padding-top: 100px;
+        margin-top: -5%;
         padding: 0; 
     }
 
-    .quizzcontainer{
-        width: 100%;
-        height: 100%;
-        margin-top: 10%;
-        box-sizing: border-box;
+    .quizinformation{
+        margin-top: 7%;
+        margin: 5%;
     }
     
-    /* NOSE PORQUE NO AUMENTA EL TAMAÑO DEL TEXTO */ 
     .quizinfo{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 20%;
+        margin-top: 30%;
         width: 100%;
         height: 100%;
     }
 
-    .image-container input{
-        font-size: 35px;
+    .image-container{
+        margin-left: 6%;
+        width: 70%;
+        height: 70%;
+    }
+
+    .image-container img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .image-container .addimage{
+        font-size: 17px;
+        height: 40px;
     }
 
     .quizdescription{
         display: flex;
         flex-direction: column;
+        margin-top: 10%;
         text-align: center;
         justify-content: center;
+        width: 100%;
+        animation-name: poorque;
+        animation-duration: 1.3s;
+    }
+
+    @keyframes poorque {
+        from {transform: translateX(100%);}
+        to {transform: translateX(0%);}
     }
     
     .quizdescription .descriptionBig{
-        display: none;
+        width: 100%;
+        height: 5em;
+        color: white;
+        resize: none;
+        font-size: 20px;
+        font-family: 'Poppins';
+        background-color: rgba(159, 119, 198, 0.65);
+        border-radius: 4px;
     }
     
     .quizdescription .quizztitle{
         width: 100%;
-        font-size: 85px;
+        font-size: 56px;
     }
     
     .quizdescription .submit{
         margin-top: 1%;
         color: #FFFFFF;
-        font-size: 25px;
+        font-size: 15px;
         background-color: green;
     }
 
@@ -552,27 +636,23 @@ fieldset{
         animation-duration: 1.3s;
     }
 
+    .addquestion1 .add{
+        font-size: 17px;
+        height: 50px;
+    }
+
     .noquestions{
         width: 96%;
     }
 
-    .descriptionSmall .description{
-        display: block;
-        margin-top: 5%;
-        width: 19em;
-        height: 7em;
-        color: white;
-        resize: none;
-        font-size: 50px;
-        background-color: rgba(159, 119, 198, 0.65);
-        border-radius: 4px;
-        animation-name: animacionquestion;
-        animation-duration: 1.3s;
+    .define h1{
+        font-family: 'Poppins';
+        font-size: 16px;
     }
 
-    @keyframes animacionquestion {
-        from {transform: translateX(100%);}
-        to {transform: translateX(0%);}
+    .define h2{
+        font-family: 'Poppins';
+        font-size: 16px;
     }
 
     .description::placeholder{
@@ -580,7 +660,6 @@ fieldset{
     }
 
     .quizz-questions{
-        margin-top: 10%;
         animation-name: quizz-questions;
         animation-duration: 1.3s;
         animation-timing-function: ease;
@@ -595,16 +674,103 @@ fieldset{
         }
     }
 
-    .quizz-questions p, span, h2{
-        font-size: 35px;
+    .quizz-questions p, span{
+        font-family: 'Poppins';
+        font-size: 14px;
+    }
+
+    .quizz-questions h2{
+        font-size: 18px;
     }
 
     .addquestion input{
-        font-size: 35px;
+        font-size: 16px;
     }
 }
 
 /* TABLET */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+    .container{
+        padding: 0; 
+    }
 
+    .quizinformation{
+        margin: 5%;
+    }
+    
+    .quizinfo{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 20%;
+        margin-top: 17%;
+        width: 100%;
+        height: 100%;
+    }
+
+    .image-container{
+        margin-left: 6%;
+        width: 70%;
+        height: 70%;
+    }
+
+    .image-container img{
+        width: 98%;
+        height: 70%;
+    }
+
+    .image-container .addimage{
+        font-size: 26px;
+        height: 40px;
+    }
+
+    .quizdescription{
+        width: 100%;
+        height: 100%;
+    }
+
+    .quizdescription .quizztitle{
+        margin-top: 3%;
+        width: 100%;
+    }
+
+    .quizdescription .descriptionBig{
+        font-family: 'Poppins';
+        height: 10em;
+    }
+
+    .quizdescription .submit{
+        margin-top: 1%;
+        color: #FFFFFF;
+        font-size: 22px;
+        background-color: green;
+    }
+
+    .quizz-questions{
+        margin-top: -10%;
+    }
+
+    .quizquestions{
+        margin-top: -5%;
+        width: 100%;
+    }
+
+    .noquestions{
+        width: 96%;
+    }
+
+    .define h1{
+        font-family: 'Poppins';
+        font-size: 24px;
+    }
+
+    .define h2{
+        font-family: 'Poppins';
+        font-size: 24px;
+    }
+
+    .quizz-questions p, span{
+        font-family: 'Poppins';
+        font-size: 14px;
+    }
 }
