@@ -34,12 +34,15 @@
 
                     <div class="user-data" id="email-data">
                         <h2>Email address</h2>
-                        <input class="data-input" id="email-input" type="text" required>
+                        <input class="data-input" id="email-input" type="email" required>
                     </div>
 
                     <div class="user-data" id="password-data">
                         <h2>Password</h2>
-                        <input class="data-input" id="password-input" type="password" required>
+                        <input class="data-input" id="password-input"
+                        type="password"
+                        required
+                        required>
                     </div>
 
                     <div class="user-data" id="confirm-password-data">
@@ -47,10 +50,9 @@
                         <input class="data-input" id="confirm-password-input" type="password" required>
                     </div>
                     
-                    <div class="login-and-message">
-                        <button class="create-account-button" type="button">Create Account</button>
-                        <p>By continuing, you agree to the Terms of use and Privacy Policy.</p>
-                    </div>
+                    
+                    <input id="create-account-button" type="submit" value="Create Account"/>
+                    <p>By continuing, you agree to the Terms of use and Privacy Policy.</p>
                 </form>
                 <section class="login-account">
                     <h1><span>Already have an account?</span></h1>
@@ -66,9 +68,6 @@
         </main>
         <div class="loader"></div>
     </body>
-    <script src="../../js-files/login/create-account.js"></script>
     <footer include-file="../common/footer.html"></footer>
-    <script type = module src="../../js-files/login/create-account.js"></script>
-    <script type = module src="../../js-files/common/backend-functions.js"></script>
     <script>IncludeFile()</script>
 </html>
