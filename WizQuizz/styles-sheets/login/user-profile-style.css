@@ -65,11 +65,9 @@ main {
 	font-size: 15px;
 	padding-top: 12%;
 	padding-bottom: 12%;
-}
-
-.user-box{
 	margin: 0 20%;
 }
+
 
 .main-user-info{
 	display: flex;
@@ -249,13 +247,14 @@ main {
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 	main{
 		display: flex;
+		margin: 20% 10%;
 	}
 	.additional-info
 	.additional-info{
 		display: flex;
 	}
 	.nickname h1{
-		font-size: 2rem;
+		font-size: 1.2rem;
 	}
 	.user-image-container{
 		height: 100px;
@@ -298,5 +297,22 @@ main {
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 
-
+	.sectionlogOut{
+		display: flex; /* Utilizar flexbox */
+		justify-content: center; /* Centrar horizontalmente */
+		align-items: center; /* Centrar verticalmente */
+		width: 30%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.logOut{
+		display: flex;
+	}
+	.nickname h1{
+		font-size: 3rem;
+	}
+	main{
+		display: flex;
+		margin: 15% 10%;
+	}
 }
