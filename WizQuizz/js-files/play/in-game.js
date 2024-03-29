@@ -31,6 +31,14 @@ function fadeOutAudio(audio, duration) {
     }, intervalDuration);
 }
 
+window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader");
+
+    loader.classList.add("loader-hidden");
+
+   
+})
+
 document.addEventListener('DOMContentLoaded', function() {
     const buttons = document.querySelectorAll('.answers button:not(.next-question)');
     const correctButton = document.getElementById("correct-answer");
