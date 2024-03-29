@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
         mobileMenu.classList.toggle('show-menu');
     });
 
-    //Create Questions
+    //Create Question
     document.getElementById("submit").addEventListener("click", function(event) {
         event.preventDefault(); // Evitar que el formulario se envíe de forma predeterminada
 
