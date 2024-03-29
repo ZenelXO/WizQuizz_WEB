@@ -121,8 +121,15 @@ main {
     padding-right: 5%;
 }
 
+.data-input:valid {
+    background-color: rgb(182, 243, 182);
+}
+
+.data-input:invalid {
+    background-color: rgb(202, 131, 131);
+}
 .user-data h2 {
-    padding-top: 1.5%;
+    padding-top: 1.2%;
     padding-bottom: 0%;
     margin-bottom: 0%;
     margin-top: 0%;
@@ -130,7 +137,7 @@ main {
     color: #000000;
     text-decoration: none;
     font-family: Poppins, Arial, Helvetica, sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: left;
 }
 
@@ -148,21 +155,16 @@ main {
     border-radius: 10px;
 }
 
-.login-and-message{
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 4%;
-}
-
-.login-and-message p{
+#inputs p{
     text-align: center;
+    padding-bottom: 5%;
 }
 
-.create-account-button {
+#create-account-button {
     margin-top: 3%;
     margin-bottom: 2%;
 
-    width: 100%;
+    width: 90%;
     height: 45px;
     
     border-radius: 20px;
@@ -176,9 +178,12 @@ main {
 
     cursor: pointer;
     transition: all 0.2s linear;
+
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
-.create-account-button:hover {
+#create-account-button:hover {
     background-color: #8708f6;
     box-shadow: 0 0 15px purple;
 }
@@ -258,6 +263,11 @@ main {
     #inputs h2{
         font-size: 1rem;
     }
+
+    #inputs p{
+        font-size: 0.75rem;
+        padding: 5% 5%;
+    }
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
@@ -272,5 +282,10 @@ main {
 
     .login-box {
         margin-right: 0;
+    }
+
+    #inputs p{
+        font-size: 1rem;
+        padding: 3% 5%;
     }
 }

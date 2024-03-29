@@ -14,7 +14,10 @@ document.addEventListener('DOMContentLoaded', async function() {
     menuIcon.addEventListener('click', function () {
         mobileMenu.classList.toggle('show-menu');
     });
+<<<<<<< HEAD
     
+=======
+>>>>>>> ebde47625ddd1ab7af9345f69f46f14237cafe4d
     const finish = document.getElementById("finish");
     const mark = document.getElementById("mark");
     var resultado = localStorage.getItem("results");
