@@ -6,11 +6,13 @@ import { HomeComponent } from "./home/home.component";
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import {AppComponent} from "./app.component";
+import {SearchComponent} from "./search/search.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    SearchComponent,
     HeaderComponent,
     FooterComponent
   ],
