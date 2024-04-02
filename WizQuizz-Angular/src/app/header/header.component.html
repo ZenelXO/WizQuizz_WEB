@@ -1,17 +1,17 @@
 <div id="head">
   <div class="navigation">
-    <a class="header-logo" href=""><img src="assets/images/wizquizz-logo.png" alt="Navgiation Icon" height="64"></a>
-    <a class="title-nav" href="">WizQuizz</a>
+    <a class="header-logo" routerLink="/"><img src="../../assets/img/common/wizquizz-logo.png" alt="Navgiation Icon" height="64"></a>
+    <a class="title-nav" routerLink="/">WizQuizz</a>
   </div>
   <div id="header-buttons">
-    <a href=""><input class="header-button" type="button" value="PLAY"></a>
-    <a href=""><input class="header-button" type="button" value="CREATE"></a>
-    <a class="sign" href=""><i class="fa fa-sign-in fa-3x" aria-hidden="true"></i></a>
+    <a routerLink="/search"><input class="header-button" type="button" value="PLAY"></a>
+    <a routerLink="/create"><input class="header-button" type="button" value="CREATE"></a>
+    <a routerLink="/sign-in" class="sign"><i class="fa fa-sign-in fa-3x" aria-hidden="true"></i></a>
     <a class="mobile-bars"><i class="fa fa-bars fa-3x" aria-hidden="true"></i></a>
   </div>
 </div>
 <ul class="mobile-menu hidden-menu">
-  <li><a href="">PLAY</a></li>
-  <li><a href="">CREATE</a></li>
-  <li><a href="">SIGN IN</a></li>
+  <li><a routerLink="/search">PLAY</a></li>
+  <li><a routerLink="/create">CREATE</a></li>
+  <li><a routerLink="/sign-in">SIGN IN</a></li>
 </ul>

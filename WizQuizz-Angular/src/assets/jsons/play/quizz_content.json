@@ -1,0 +1,18 @@
+{
+  "quizz": [
+    {"image": "../../website-images/common/quizz-default.jpg", "title": "Quizz 1"},
+    {"image": "../../website-images/common/quizz-default.jpg", "title": "Quizz 2"},
+    {"image": "../../website-images/common/quizz-default.jpg", "title": "Quizz 3"},
+    {"image": "../../website-images/common/quizz-default.jpg", "title": "Quizz 4"},
+    {"image": "../../website-images/common/quizz-default.jpg", "title": "Quizz 5"},
+    {"image": "../../website-images/common/quizz-default.jpg", "title": "Quizz 6"},
+    {"image": "../../website-images/common/quizz-default.jpg", "title": "Quizz 7"},
+    {"image": "../../website-images/common/quizz-default.jpg", "title": "Quizz 8"},
+    {"image": "../../website-images/common/quizz-default.jpg", "title": "Quizz 9"},
+    {"image": "../../website-images/common/quizz-default.jpg", "title": "Quizz 10"},
+    {"image": "../../website-images/common/quizz-default.jpg", "title": "Quizz 11"},
+    {"image": "../../website-images/common/quizz-default.jpg", "title": "Quizz 12"},
+    {"image": "../../website-images/common/quizz-default.jpg", "title": "Quizz 13"},
+    {"image": "../../website-images/common/quizz-default.jpg", "title": "Quizz 14"}
+  ]
+}
