@@ -1,14 +1,14 @@
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
+import {ConsoleLogger} from "@angular/compiler-cli";
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.css',
+  selector: 'app-search',
+  templateUrl: './search.component.html',
+  styleUrl: './search.component.css',
   encapsulation: ViewEncapsulation.None
 })
 
-export class HomeComponent implements OnInit {
-
+export class SearchComponent implements OnInit {
   loader: HTMLElement | null = null;
 
   ngOnInit() {
@@ -26,13 +26,13 @@ export class HomeComponent implements OnInit {
 
     document.addEventListener('DOMContentLoaded', async () => {
 
-      const [whoData, newsData] = await Promise.all([
-        loadJSON({file: 'assets/jsons/home/who_content.json'}),
-        loadJSON({file: 'assets/jsons/home/news_content.json'})
+      const [filtersData, quizzData] = await Promise.all([
+        loadJSON({file: 'assets/jsons/play/filters_content.json'}),
+        loadJSON({file: 'assets/jsons/play/quizz_content.json'})
       ]);
 
-      renderContent({content: whoData.info, containerSelector: '.about-us-content'});
-      renderContent({content: newsData.news, containerSelector: '.news-content'});
+      renderContent({content: filtersData.filters, containerSelector: 'aside'});
+      renderContent({content: quizzData.quizz, containerSelector: '.quizz-selection'});
 
       const hiddenElements = document.querySelectorAll('.hidden');
       hiddenElements.forEach((el) => observer.observe(el));
@@ -48,26 +48,20 @@ export class HomeComponent implements OnInit {
 
     function renderContent({content, containerSelector}: { content: any, containerSelector: any }) {
       const container = document.querySelector(containerSelector);
-      let count_news = 0;
       content.forEach((item: any) => {
         const div = document.createElement('div');
-        if (containerSelector === '.about-us-content') {
-          div.classList.add('about-us-info');
+        if (containerSelector === 'aside') {
+          div.classList.add('filter');
+          div.innerHTML = `<span><img src="${item.icon}" alt="NavIcon" width="64" height="64"></span>
+                         <span>${item.text}</span>`;
+        } else if (containerSelector === '.quizz-selection') {
+          div.classList.add('quizz');
           div.classList.add('hidden');
-          if (count_news % 2 === 0) {
-            div.innerHTML = `<img src="${item.image}" width="320" height="180" class="image" alt="">
-                                <p>${item.text}</p>`;
-            count_news++;
-          } else {
-            div.innerHTML = `<p>${item.text}</p>
-                                <img src="${item.image}" width="320" height="180" class="image" alt="">`;
-            count_news++;
-          }
-        } else if (containerSelector === '.news-content') {
-          div.classList.add('new');
-          div.innerHTML = `<img src="${item.image}" width="560" height="315" alt=""></a>
-                             <div class="news-description"><a href=""><h2>${item.headline}</h2></a>
-                             <p>${item.description}</p></div>`;
+          div.innerHTML = `<a href="">
+                            <img src="${item.image}" width="400" height="225" class="image">
+                            <h2>${item.title}</h2>
+                            </a>`;
+          console.log("se ejecutó");
         }
         container.appendChild(div);
       });
