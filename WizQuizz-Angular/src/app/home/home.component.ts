@@ -1,4 +1,4 @@
-import {Component, OnInit, ViewEncapsulation} from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -10,14 +10,9 @@ export class HomeComponent implements OnInit {
   loader: HTMLElement | null = null;
 
   async ngOnInit() {
-    this.loader = document.querySelector(".loader");
+    this.loader = document.querySelector('.loader');
     if (this.loader) {
-      this.loader.classList.add("loader-hidden");
-      this.loader.addEventListener("transitionend", () => {
-        if (this.loader) {
-          document.body.removeChild(this.loader);
-        }
-      });
+      this.loader.classList.remove('loader-hidden');
     }
 
     try {
@@ -33,11 +28,17 @@ export class HomeComponent implements OnInit {
       hiddenElements.forEach((el) => this.observer.observe(el));
     } catch (error) {
       console.error('Error loading JSON data:', error);
+    } finally {
+      setTimeout(() => {
+        if (this.loader) {
+          this.loader.classList.add('loader-hidden');
+        }
+      }, 500);
     }
   }
 
   async loadJSON(file: string) {
-    console.log("Reading JSON");
+    console.log('Reading JSON');
     const response = await fetch(file);
     if (!response.ok) {
       throw new Error(`Failed to fetch JSON: ${response.statusText}`);
