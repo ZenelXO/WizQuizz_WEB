@@ -23,8 +23,8 @@ export class SearchComponent implements OnInit {
 
     try {
       const [filtersData, quizzData] = await Promise.all([
-        this.loadJSON('assets/jsons/play/filters_content.json'),
-        this.loadJSON('assets/jsons/play/quizz_content.json')
+        this.loadJSON('assets/json/search/filters_content.json'),
+        this.loadJSON('assets/json/search/quizz_content.json')
       ]);
 
       this.renderContent(filtersData.filters, 'aside');
