@@ -22,8 +22,8 @@ export class HomeComponent implements OnInit {
 
     try {
       const [whoData, newsData] = await Promise.all([
-        this.loadJSON('assets/jsons/home/who_content.json'),
-        this.loadJSON('assets/jsons/home/news_content.json')
+        this.loadJSON('assets/json/home/who_content.json'),
+        this.loadJSON('assets/json/home/news_content.json')
       ]);
 
       this.renderContent(whoData.info, '.about-us-content');
