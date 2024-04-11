@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {HomeComponent} from "./home/home.component";
 import {SearchComponent} from "./search/search.component";
+import { CreateAccountComponent } from './create-account/create-account.component';
 
 const routes: Routes = [
   {
@@ -11,7 +12,8 @@ const routes: Routes = [
   {
     path: 'search',
     component: SearchComponent
-  }
+  },
+  { path: 'create-account', component: CreateAccountComponent }
 ];
 
 @NgModule({
