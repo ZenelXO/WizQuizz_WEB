@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "WizQuizz-Angular": {
+    "wiz-quizz": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -67,10 +67,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "WizQuizz-Angular:build:production"
+              "buildTarget": "wiz-quizz:build:production"
             },
             "development": {
-              "buildTarget": "WizQuizz-Angular:build:development"
+              "buildTarget": "wiz-quizz:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -78,7 +78,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "WizQuizz-Angular:build"
+            "buildTarget": "wiz-quizz:build"
           }
         },
         "test": {
@@ -98,6 +98,23 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "wiz-quizz:build:production",
+              "serveTarget": "wiz-quizz:serve:production"
+            },
+            "development": {
+              "buildTarget": "wiz-quizz:build:development",
+              "serveTarget": "wiz-quizz:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }

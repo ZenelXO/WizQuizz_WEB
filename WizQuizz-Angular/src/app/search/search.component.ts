@@ -59,7 +59,7 @@ export class SearchComponent implements OnInit {
       } else if (containerSelector === '.quizz-selection') {
         div.classList.add('quizz');
         div.classList.add('hidden');
-        div.innerHTML = `<a href="">
+        div.innerHTML = `<a routerLink="/preview">
                             <img src="${item.image}" width="400" height="225" class="image">
                             <h2>${item.title}</h2>
                             </a>`;

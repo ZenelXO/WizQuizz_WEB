@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "wiz-quizz": {
+      "hosting": {
+        "wiz-quizz": [
+          "wiz-quizz"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "wiz-quizz"
+  }
+}
