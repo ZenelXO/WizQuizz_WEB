@@ -1,37 +1,55 @@
-import {Component, OnInit, ViewEncapsulation} from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-preview',
   templateUrl: './preview.component.html',
-  styleUrl: './preview.component.css',
-  encapsulation: ViewEncapsulation.None
+  styleUrl: './preview.component.css'
 })
+
 export class PreviewComponent implements OnInit {
-  loader: HTMLElement | null = null;
+  @ViewChild('preview', { static: true }) previewElement!: ElementRef;
+  @ViewChild('questions', { static: true }) questionsElement!: ElementRef;
 
-  async ngOnInit() {
-    this.loader = document.querySelector('.loader');
-    if (this.loader) {
-      this.loader.classList.remove('loader-hidden');
-    }
+  previewData: any = { preview: [] };
+  questionsData: any = { questions: [] };
 
-    try {
-      const previewData = await this.loadJSON('assets/json/preview/quizz-preview.json');
+  ngOnInit() {
+    this.loadJSON('assets/json/preview/quizz-preview.json').then(data => {
+      this.previewData = data;
+      this.questionsData = data;
+    }).catch(error => {
+      console.error('Error loading filters JSON data:', error);
+    });
 
-      this.renderContent(previewData.preview, '.preview');
-      this.renderContent(previewData.questions, '.quizz-questions');
+    const options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    };
 
-      const hiddenElements = document.querySelectorAll('.hidden');
-      hiddenElements.forEach((el) => this.observer.observe(el));
-    } catch (error) {
-      console.error('Error loading JSON data:', error);
-    } finally {
-      setTimeout(() => {
-        if (this.loader) {
-          this.loader.classList.add('loader-hidden');
+    const observer = new IntersectionObserver(entries => {
+      let previewInView = false;
+      let questionsInView = false;
+
+      entries.forEach(entry => {
+        if (entry.target === this.previewElement.nativeElement && entry.isIntersecting) {
+          previewInView = true;
         }
-      }, 500);
-    }
+
+        if (entry.target === this.questionsElement.nativeElement && entry.isIntersecting) {
+          questionsInView = true;
+        }
+      });
+
+      if (previewInView && questionsInView) {
+        this.previewElement.nativeElement.classList.add('show');
+        this.questionsElement.nativeElement.classList.add('show');
+        observer.disconnect();
+      }
+    }, options);
+
+    observer.observe(this.previewElement.nativeElement);
+    observer.observe(this.questionsElement.nativeElement);
   }
 
   async loadJSON(file: string) {
@@ -42,56 +60,4 @@ export class PreviewComponent implements OnInit {
     }
     return response.json();
   }
-
-  renderContent(content: any[], containerSelector: string) {
-    const container = document.querySelector(containerSelector);
-    if (!container) return;
-    content.forEach((item: any) => {
-      const section = document.createElement('section');
-      const aux_section = document.createElement('section');
-
-      if (containerSelector === '.preview') {
-        section.classList.add('quizz-info');
-        section.innerHTML = `<img src="${item.image}" width="560" height="315">
-                     <div class="quizz-lower-info">
-                         <div class="additional-info">
-                             <p>${item.author}</p>
-                             <p>${item.submit_date}</p>
-                         </div>
-                         <a routerLink="/"><input class="quizz-start-button" type="button" value="START GAME"></a>
-                     </div>`;
-
-        aux_section.classList.add('quizz-description');
-        aux_section.innerHTML = `<h1>${item.title}</h1>
-                                <p>${item.description}</p>`;
-      } else if (containerSelector === '.quizz-questions') {
-        section.classList.add('question');
-        section.classList.add('hidden');
-        let answersHTML = '';
-        item.answers.forEach((answer: any) => {
-          answersHTML += `<button class="${answer.icon_name}-button"><span><img src="${answer.image}"></span><span>${answer.text}</span></button>`;
-        });
-        section.innerHTML = `<div class="question-info">
-                         <p>${item.question_text}</p>
-                         <div class="num-of-question">
-                             <h2>${item.question_number}</h2>
-                         </div>
-                     </div>
-                     <div class="answers">${answersHTML}</div>`;
-      }
-      container.appendChild(section);
-      container.appendChild(aux_section);
-    });
-  }
-
-  observer = new IntersectionObserver(entries => {
-    entries.forEach((entry) => {
-      console.log(entry)
-      if (entry.isIntersecting) {
-        entry.target.classList.add('show');
-      } else {
-        entry.target.classList.remove('show');
-      }
-    });
-  });
 }

@@ -1,28 +1,76 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css',
-  encapsulation: ViewEncapsulation.None
+  styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  @ViewChild('aboutUs', { static: true }) aboutUsElement!: ElementRef;
+  @ViewChild('news', { static: true }) newsElement!: ElementRef;
+  @ViewChild('newsContent', { static: true }) newsContentElement!: ElementRef;
 
-  async ngOnInit() {
-    try {
-      const [whoData, newsData] = await Promise.all([
-        this.loadJSON('assets/json/home/who_content.json'),
-        this.loadJSON('assets/json/home/news_content.json')
-      ]);
+  whoData: any[] = [];
+  newsData: any[] = [];
 
-      this.renderContent(whoData.info, '.about-us-content');
-      this.renderContent(newsData.news, '.news-content');
+  ngOnInit(): void {
+    this.loadJSON('assets/json/home/who_content.json').then(data => {
+      this.whoData = data.info;
+    }).catch(error => {
+      console.error('Error loading WHO data:', error);
+    });
 
-      const hiddenElements = document.querySelectorAll('.hidden');
-      hiddenElements.forEach((el) => this.observer.observe(el));
-    } catch (error) {
-      console.error('Error loading JSON data:', error);
-    }
+    this.loadJSON('assets/json/home/news_content.json').then(data => {
+      this.newsData = data.news;
+    }).catch(error => {
+      console.error('Error loading news data:', error);
+    });
+
+    const options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver(entries => {
+      let aboutUsInView = false;
+      let newsInView = false;
+      let newsContentInView = false;
+
+      entries.forEach(entry => {
+        if (entry.target === this.aboutUsElement.nativeElement && entry.isIntersecting) {
+          aboutUsInView = true;
+        }
+
+        if (entry.target === this.newsElement.nativeElement && entry.isIntersecting) {
+          newsInView = true;
+        }
+
+        if (entry.target === this.newsContentElement.nativeElement && entry.isIntersecting) {
+          newsContentInView = true;
+        }
+      });
+
+      if (aboutUsInView) {
+        this.aboutUsElement.nativeElement.classList.add('show');
+      }
+
+      if (newsInView) {
+        this.newsElement.nativeElement.classList.add('show');
+      }
+
+      if (newsContentInView) {
+        this.newsContentElement.nativeElement.classList.add('show');
+      }
+
+      if (aboutUsInView && newsInView && newsContentInView) {
+        observer.disconnect();
+      }
+    }, options);
+
+    observer.observe(this.aboutUsElement.nativeElement);
+    observer.observe(this.newsElement.nativeElement);
+    observer.observe(this.newsContentElement.nativeElement);
   }
 
   async loadJSON(file: string) {
@@ -33,42 +81,4 @@ export class HomeComponent implements OnInit {
     }
     return response.json();
   }
-
-  renderContent(content: any[], containerSelector: string) {
-    const container = document.querySelector(containerSelector);
-    if (!container) return;
-
-    let count_news = 0;
-    content.forEach((item: any) => {
-      const div = document.createElement('div');
-      if (containerSelector === '.about-us-content') {
-        div.classList.add('about-us-info', 'hidden');
-        div.innerHTML = count_news % 2 === 0 ?
-          `<img src="${item.image}" width="320" height="180" class="image" alt="">
-           <p>${item.text}</p>` :
-          `<p>${item.text}</p>
-           <img src="${item.image}" width="320" height="180" class="image" alt="">`;
-        count_news++;
-      } else if (containerSelector === '.news-content') {
-        div.classList.add('new');
-        div.innerHTML = `<img src="${item.image}" width="560" height="315" alt="">
-                         <div class="news-description">
-                           <a href=""><h2>${item.headline}</h2></a>
-                           <p>${item.description}</p>
-                         </div>`;
-      }
-      container.appendChild(div);
-    });
-  }
-
-  observer = new IntersectionObserver(entries => {
-    entries.forEach((entry) => {
-      console.log(entry);
-      if (entry.isIntersecting) {
-        entry.target.classList.add('show');
-      } else {
-        entry.target.classList.remove('show');
-      }
-    });
-  });
 }
