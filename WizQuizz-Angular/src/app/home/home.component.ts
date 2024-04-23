@@ -7,14 +7,8 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None
 })
 export class HomeComponent implements OnInit {
-  loader: HTMLElement | null = null;
 
   async ngOnInit() {
-    this.loader = document.querySelector('.loader');
-    if (this.loader) {
-      this.loader.classList.remove('loader-hidden');
-    }
-
     try {
       const [whoData, newsData] = await Promise.all([
         this.loadJSON('assets/json/home/who_content.json'),
@@ -28,12 +22,6 @@ export class HomeComponent implements OnInit {
       hiddenElements.forEach((el) => this.observer.observe(el));
     } catch (error) {
       console.error('Error loading JSON data:', error);
-    } finally {
-      setTimeout(() => {
-        if (this.loader) {
-          this.loader.classList.add('loader-hidden');
-        }
-      }, 500);
     }
   }
 
