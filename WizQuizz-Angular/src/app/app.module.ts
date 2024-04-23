@@ -10,6 +10,8 @@ import {SearchComponent} from "./search/search.component";
 import {PreviewComponent} from "./preview/preview.component";
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { getDatabase, provideDatabase } from '@angular/fire/database';
+import { SignInComponent } from './sign-in/sign-in.component';
+import { CreateAccountComponent } from './create-account/create-account.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { getDatabase, provideDatabase } from '@angular/fire/database';
     SearchComponent,
     PreviewComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    SignInComponent,
+    CreateAccountComponent
   ],
   imports: [
     BrowserModule,

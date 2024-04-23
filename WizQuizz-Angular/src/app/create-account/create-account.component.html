@@ -1,0 +1,48 @@
+
+
+<main>
+    
+    <section class="login-box">
+        <form id="inputs">
+            <h1>Create Account</h1>
+
+            <div class="user-data" id="nickname-data">
+                <h2>In-game username</h2>
+                <input class="data-input" id="nickname-input" type="text" required>
+            </div>
+
+            <div class="user-data" id="email-data">
+                <h2>Email address</h2>
+                <input class="data-input" id="email-input" type="email" required>
+            </div>
+
+            <div class="user-data" id="password-data">
+                <h2>Password</h2>
+                <input class="data-input" id="password-input"
+                type="password"
+                required
+                required>
+            </div>
+
+            <div class="user-data" id="confirm-password-data">
+                <h2>Confirm your password</h2>
+                <input class="data-input" id="confirm-password-input" type="password" required>
+            </div>
+            
+            <div id="aviso" class="aviso"></div>
+            <input class="create-account-button" id="create-account-button" type="submit" value="Create Account"/>
+            <p>By continuing, you agree to the Terms of use and <a class="copy" href="../../privacy-policy.html">Privacy Policy.</a></p>
+        </form>
+        <section class="login-account">
+            <h1><span>Already have an account?</span></h1>
+            <a routerLink="/sign-in"><button class="login-button" type="submit">Sign in</button></a>
+        </section>               
+    </section>
+
+    <section class="login-image">
+        <img id= "wand-image" src="../../assets/img/common/wizquizz-logo.png">
+    </section>
+
+    
+</main>
+
