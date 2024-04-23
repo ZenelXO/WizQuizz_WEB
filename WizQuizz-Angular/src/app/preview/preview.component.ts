@@ -41,9 +41,15 @@ export class PreviewComponent implements OnInit {
         }
       });
 
-      if (previewInView && questionsInView) {
+      if (previewInView) {
         this.previewElement.nativeElement.classList.add('show');
+      }
+
+      if (questionsInView) {
         this.questionsElement.nativeElement.classList.add('show');
+      }
+
+      if (previewInView && questionsInView) {
         observer.disconnect();
       }
     }, options);

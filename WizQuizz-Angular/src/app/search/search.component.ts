@@ -46,9 +46,15 @@ export class SearchComponent implements OnInit {
         }
       });
 
-      if (quizzesInView && filtersInView) {
+      if (quizzesInView) {
         this.quizzesElement.nativeElement.classList.add('show');
+      }
+
+      if (filtersInView) {
         this.filtersElement.nativeElement.classList.add('show');
+      }
+
+      if (quizzesInView && filtersInView) {
         observer.disconnect();
       }
     }, options);
