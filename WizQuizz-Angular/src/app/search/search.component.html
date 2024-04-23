@@ -1,7 +1,19 @@
 <div class="container">
-  <aside class="hidden"></aside>
+  <aside class="hidden">
+    <div *ngFor="let filter of filtersData.filters" class="filter">
+      <span><img [src]="filter.icon" alt="NavIcon" width="64" height="64"></span>
+      <span>{{ filter.text }}</span>
+    </div>
+  </aside>
   <main>
-    <section class="quizz-selection"></section>
+    <section class="quizz-selection">
+      <div *ngFor="let quizz of quizzData.quizz" class="quizz hidden" (intersection)="observeIntersection($event)">
+        <a routerLink="/preview">
+          <img [src]="quizz.image" width="400" height="225" class="image">
+          <h2>{{ quizz.title }}</h2>
+        </a>
+      </div>
+    </section>
   </main>
 </div>
 <div class="loader"></div>

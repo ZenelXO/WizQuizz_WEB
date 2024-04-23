@@ -1,41 +1,26 @@
-import {Component, OnInit, ViewEncapsulation} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
-  styleUrl: './search.component.css',
-  encapsulation: ViewEncapsulation.None
+  styleUrls: ['./search.component.css']
 })
-
 export class SearchComponent implements OnInit {
-  loader: HTMLElement | null = null;
+  filtersData: any = { filters: [] };
+  quizzData: any = { quizz: [] };
 
-  async ngOnInit() {
-    this.loader = document.querySelector('.loader');
-    if (this.loader) {
-      this.loader.classList.remove('loader-hidden');
-    }
+  ngOnInit() {
+    this.loadJSON('assets/json/search/filters_content.json').then(data => {
+      this.filtersData = data;
+    }).catch(error => {
+      console.error('Error loading filters JSON data:', error);
+    });
 
-    try {
-      const [filtersData, quizzData] = await Promise.all([
-        this.loadJSON('assets/json/search/filters_content.json'),
-        this.loadJSON('assets/json/search/quizz_content.json')
-      ]);
-
-      this.renderContent(filtersData.filters, 'aside');
-      this.renderContent(quizzData.quizz, '.quizz-selection');
-
-      const hiddenElements = document.querySelectorAll('.hidden');
-      hiddenElements.forEach((el) => this.observer.observe(el));
-    } catch (error) {
-      console.error('Error loading JSON data:', error);
-    } finally {
-      setTimeout(() => {
-        if (this.loader) {
-          this.loader.classList.add('loader-hidden');
-        }
-      }, 500);
-    }
+    this.loadJSON('assets/json/search/quizz_content.json').then(data => {
+      this.quizzData = data;
+    }).catch(error => {
+      console.error('Error loading quizz JSON data:', error);
+    });
   }
 
   async loadJSON(file: string) {
@@ -47,35 +32,11 @@ export class SearchComponent implements OnInit {
     return response.json();
   }
 
-  renderContent(content: any[], containerSelector: string) {
-    const container = document.querySelector(containerSelector);
-    if (!container) return;
-    content.forEach((item: any) => {
-      const div = document.createElement('div');
-      if (containerSelector === 'aside') {
-        div.classList.add('filter');
-        div.innerHTML = `<span><img src="${item.icon}" alt="NavIcon" width="64" height="64"></span>
-                         <span>${item.text}</span>`;
-      } else if (containerSelector === '.quizz-selection') {
-        div.classList.add('quizz');
-        div.classList.add('hidden');
-        div.innerHTML = `<a routerLink="/preview">
-                            <img src="${item.image}" width="400" height="225" class="image">
-                            <h2>${item.title}</h2>
-                            </a>`;
-      }
-      container.appendChild(div);
-    });
+  observeIntersection(event: any) {
+    if (event.isIntersecting) {
+      event.target.classList.add('show');
+    } else {
+      event.target.classList.remove('show');
+    }
   }
-
-  observer = new IntersectionObserver(entries => {
-    entries.forEach((entry) => {
-      console.log(entry)
-      if (entry.isIntersecting) {
-        entry.target.classList.add('show');
-      } else {
-        entry.target.classList.remove('show');
-      }
-    });
-  });
 }
