@@ -1,0 +1,17 @@
+{
+  "filters": [
+    {"icon": "assets/img/filters/science.png", "text": "Science"},
+    {"icon": "assets/img/filters/music.png", "text": "Music"},
+    {"icon": "assets/img/filters/geography.png", "text": "Geography"},
+    {"icon": "assets/img/filters/sports.png", "text": "Sports"},
+    {"icon": "assets/img/filters/animals.png", "text": "Animals"},
+    {"icon": "assets/img/filters/nature.png", "text": "Nature"},
+    {"icon": "assets/img/filters/love.png", "text": "Love"},
+    {"icon": "assets/img/filters/technology.png", "text": "Technology"},
+    {"icon": "assets/img/filters/food.png", "text": "Food"},
+    {"icon": "assets/img/filters/space.png", "text": "Space"},
+    {"icon": "assets/img/filters/economy.png", "text": "Economy"},
+    {"icon": "assets/img/filters/gaming.png", "text": "Gaming"},
+    {"icon": "assets/img/filters/art.png", "text": "Art"}
+  ]
+}

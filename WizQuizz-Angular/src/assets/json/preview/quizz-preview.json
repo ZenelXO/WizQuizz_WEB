@@ -1,0 +1,117 @@
+{
+  "preview": [
+    {
+      "image": "assets/img/preview/mushroom.jpg",
+      "author": "Author: Zorro",
+      "submit_date": "Submit date: 03/03/2024",
+      "title": "Elemental Magic Quizz",
+      "description": "Test your knowledge of elemental magic in this enchanting quiz! Explore the mystical world of cauldrons, mage staffs, mana, and magic balls as you answer questions on various aspects of elemental magic. Dive into the arcane arts and see if you have what it takes to master the elements!"
+    }
+  ],
+  "questions": [
+    {
+      "question_number": "01",
+      "question_text": "What is the primary ingredient used in potion-making?",
+      "answers": [
+        {
+          "image": "assets/img/answer-options/cauldron.png",
+          "text": "Mandrake root",
+          "icon_name": "cauldron"
+        },
+        {
+          "image": "assets/img/answer-options/mage-staff.png",
+          "text": "Dragon scale",
+          "icon_name": "mage-staff"
+        },
+        {
+          "image": "assets/img/answer-options/mana.png",
+          "text": "Fairy dust",
+          "icon_name": "mana"
+        },
+        {
+          "image": "assets/img/answer-options/magic-ball.png",
+          "text": "Bat wing",
+          "icon_name": "magic-ball"
+        }
+      ]
+    },
+    {
+      "question_number": "02",
+      "question_text": "Which mystical object is known for granting wishes?",
+      "answers": [
+        {
+          "image": "assets/img/answer-options/cauldron.png",
+          "text": "Wishing stone",
+          "icon_name": "cauldron"
+        },
+        {
+          "image": "assets/img/answer-options/mage-staff.png",
+          "text": "Genie lamp",
+          "icon_name": "mage-staff"
+        },
+        {
+          "image": "assets/img/answer-options/mana.png",
+          "text": "Crystal ball",
+          "icon_name": "mana"
+        },
+        {
+          "image": "assets/img/answer-options/magic-ball.png",
+          "text": "Enchanted mirror",
+          "icon_name": "magic-ball"
+        }
+      ]
+    },
+    {
+      "question_number": "03",
+      "question_text": "Which mythical creature is said to guard treasures?",
+      "answers": [
+        {
+          "image": "assets/img/answer-options/cauldron.png",
+          "text": "Griffin",
+          "icon_name": "cauldron"
+        },
+        {
+          "image": "assets/img/answer-options/mage-staff.png",
+          "text": "Phoenix",
+          "icon_name": "mage-staff"
+        },
+        {
+          "image": "assets/img/answer-options/mana.png",
+          "text": "Basilisk",
+          "icon_name": "mana"
+        },
+        {
+          "image": "assets/img/answer-options/magic-ball.png",
+          "text": "Dragon",
+          "icon_name": "magic-ball"
+        }
+      ]
+    },
+    {
+      "question_number": "04",
+      "question_text": "What is the source of magical energy used by spellcasters?",
+      "answers": [
+        {
+          "image": "assets/img/answer-options/cauldron.png",
+          "text": "Ectoplasm",
+          "icon_name": "cauldron"
+        },
+        {
+          "image": "assets/img/answer-options/mage-staff.png",
+          "text": "Celestial essence",
+          "icon_name": "mage-staff"
+        },
+        {
+          "image": "assets/img/answer-options/mana.png",
+          "text": "Mana",
+          "icon_name": "mana"
+        },
+        {
+          "image": "assets/img/answer-options/magic-ball.png",
+          "text": "Arcane crystals",
+          "icon_name": "magic-ball"
+        }
+      ]
+    }
+  ]
+}
