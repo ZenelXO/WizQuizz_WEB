@@ -1,13 +1,5 @@
 import { Component, inject } from '@angular/core';
 import { AuthentificationService } from '../services/Authentification.service';
-import { Router } from '@angular/router';
-import { FormControl, FormGroup, Validators, ReactiveFormsModule, FormsModule } from '@angular/forms';
-
-import { RouterLink } from "@angular/router";
-import { CommonModule } from "@angular/common";
-import { User } from './User';
-
-
 
 @Component({
   selector: 'app-create-account',
@@ -16,21 +8,32 @@ import { User } from './User';
   styleUrl: './create-account.component.css'
 })
 export class CreateAccountComponent {
-  firebaseService = inject(AuthentificationService);
-  constructor(private router:Router){
+  email : string = '';
+  password : string = '';
+
+  constructor(private auth : AuthentificationService) {}
+  
+  ngOnInit(): void {
+    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
+    //Add 'implements OnInit' to the class.
     
   }
-  
-  form = new FormGroup({
-    nicknameInput: new FormControl("", [Validators.required]),
-    emailInput: new FormControl("", [Validators.required, Validators.email]),
-    passwordInput: new FormControl("", [Validators.required]),
-    confirmPasswordInput: new FormControl("", [Validators.required])
-  })
 
-  async submit() {
-    await this.firebaseService.createAccount(this.form.value as User);
-    window.alert("Usuario Creado");
-    this.router.navigate(["/sign-in"]);
+  register() {
+    console.log(this.email + " " + this.password);
+    if(this.email == ''){
+      alert('Please enter a email');
+      return;
+    }
+
+    if(this.password == ''){
+      alert('Please enter a password');
+      return;
+    }
+
+    this.auth.createAccount(this.email, this.password);
+
+    this.email = '';
+    this.password = '';
   }
 }

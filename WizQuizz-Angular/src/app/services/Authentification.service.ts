@@ -16,17 +16,44 @@ import { User } from '../create-account/User';
 })
 
 export class AuthentificationService implements OnInit{
-  router = inject(Router);
+  //router = inject(Router);
   loggedIn = false;
 
-  constructor() {
+  constructor(private fireauth : AngularFireAuth, private router : Router) {
     
   }
+
+
   ngOnInit(): void {
     localStorage.setItem("loggedIn", "false");
   }
   
-  createAccount(user:User) {
-    return createUserWithEmailAndPassword(getAuth(), user.email, user.password);
+  login(email : string, password : string){
+    this.fireauth.signInWithEmailAndPassword(email, password).then( () => {
+      localStorage.setItem('token', 'true');
+      this.router.navigate(['/']);
+    }, err => {
+      alert('something went wrong');
+      this.router.navigate(['/sign-in']);
+    })
+  }
+
+  createAccount(email : string, password: string) {
+    this.fireauth.createUserWithEmailAndPassword(email, password).then(() => {
+      alert('register was succesfull')
+      this.router.navigate(['/']);
+    }, err => {
+      alert('something went wrong');
+      this.router.navigate(['/create-account']);
+    })
+  }
+
+  logout() {
+    this.fireauth.signOut().then(() => {
+      localStorage.removeItem('token');
+      this.router.navigate(['/']);
+    }, err => {
+      alert(err.message);
+    })
   }
 }

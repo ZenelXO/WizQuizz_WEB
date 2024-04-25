@@ -1,32 +1,30 @@
 <main>
     
     <section class="login-box">
-        <form [formGroup]="form"
-        action="#"
-        method="POST"
-        (ngSubmit)="submit()"
-        id="inputs">
+        <form id="inputs">
             <h1>Create Account</h1>
 
             <div class="user-data" id="nickname-data">
                 <h2>In-game username</h2>
-                <input formControlName="nicknameInput"
+                <input 
                 class="data-input" id="nickname-input" type="text" required>
             </div>
 
             <div class="user-data" id="email-data">
                 <h2>Email address</h2>
-                <input formControlName="emailInput"
-                class="data-input" id="email-input" type="email" required>
+                <input 
+                class="data-input" id="email-input" type="email" required
+                name="email" [(ngModel)]="email">
             </div>
 
             <div class="user-data" id="password-data">
                 <h2>Password</h2>
-                <input formControlName="passwordInput"
+                <input 
                 class="data-input" id="password-input"
                 type="password"
                 required
-                required>
+                name="password"
+                [(ngModel)]="password">
             </div>
 
             <div class="user-data" id="confirm-password-data">
@@ -36,7 +34,8 @@
             </div>
             
             <div id="aviso" class="aviso"></div>
-            <input class="create-account-button" id="create-account-button" type="submit" value="Create Account"/>
+            <button type="button" class="create-account-button" (click)="register()">Log in</button>
+            <!-- <input class="create-account-button" id="create-account-button" type="submit" value="Create Account"/> -->
             <p>By continuing, you agree to the Terms of use and <a class="copy" href="../../privacy-policy.html">Privacy Policy.</a></p>
         </form>
         <section class="login-account">
