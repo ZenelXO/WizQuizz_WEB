@@ -1,24 +1,29 @@
-
-
 <main>
     
     <section class="login-box">
-        <form id="inputs">
+        <form [formGroup]="form"
+        action="#"
+        method="POST"
+        (ngSubmit)="submit()"
+        id="inputs">
             <h1>Create Account</h1>
 
             <div class="user-data" id="nickname-data">
                 <h2>In-game username</h2>
-                <input class="data-input" id="nickname-input" type="text" required>
+                <input formControlName="nicknameInput"
+                class="data-input" id="nickname-input" type="text" required>
             </div>
 
             <div class="user-data" id="email-data">
                 <h2>Email address</h2>
-                <input class="data-input" id="email-input" type="email" required>
+                <input formControlName="emailInput"
+                class="data-input" id="email-input" type="email" required>
             </div>
 
             <div class="user-data" id="password-data">
                 <h2>Password</h2>
-                <input class="data-input" id="password-input"
+                <input formControlName="passwordInput"
+                class="data-input" id="password-input"
                 type="password"
                 required
                 required>
@@ -26,7 +31,8 @@
 
             <div class="user-data" id="confirm-password-data">
                 <h2>Confirm your password</h2>
-                <input class="data-input" id="confirm-password-input" type="password" required>
+                <input formControlName="confirmPasswordInput"
+                class="data-input" id="confirm-password-input" type="password" required>
             </div>
             
             <div id="aviso" class="aviso"></div>

@@ -12,6 +12,12 @@ import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { getDatabase, provideDatabase } from '@angular/fire/database';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { CreateAccountComponent } from './create-account/create-account.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AngularFireModule } from '@angular/fire/compat';
+import { getAuth, provideAuth } from '@angular/fire/auth';
+import { AngularFireAuth, AngularFireAuthModule } from '@angular/fire/compat/auth';
+
+
 
 @NgModule({
   declarations: [
@@ -22,11 +28,15 @@ import { CreateAccountComponent } from './create-account/create-account.componen
     HeaderComponent,
     FooterComponent,
     SignInComponent,
-    CreateAccountComponent
+    CreateAccountComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule, 
+    FormsModule,
+    AngularFireModule,
+    AngularFireAuthModule,
     provideFirebaseApp(() => initializeApp({"projectId":"wiz-quizz","appId":"1:698142113065:web:ac9df1b25aba91759c8b38","databaseURL":"https://wiz-quizz-default-rtdb.firebaseio.com","storageBucket":"wiz-quizz.appspot.com","apiKey":"AIzaSyCzspdVz53ABe4ry26GbjuZGoafKHWkINQ","authDomain":"wiz-quizz.firebaseapp.com","messagingSenderId":"698142113065","measurementId":"G-7RR6QBL85G"})),
     provideDatabase(() => getDatabase())
   ],
