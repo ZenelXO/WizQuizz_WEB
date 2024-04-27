@@ -2,14 +2,8 @@ import { Injectable, OnInit, inject } from '@angular/core';
 import firebase from "firebase/compat";
 import { AngularFireAuth } from "@angular/fire/compat/auth";
 import { Router } from "@angular/router";
+import { User } from '@angular/fire/auth';
 
-import {
-  getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut,
-  GoogleAuthProvider, signInWithPopup, sendEmailVerification, sendPasswordResetEmail
-} from "@angular/fire/auth";
-
-import app = firebase.app;
-import { User } from '../create-account/User';
 
 @Injectable({
   providedIn: 'root'
@@ -38,13 +32,17 @@ export class AuthentificationService implements OnInit{
     })
   }
 
-  createAccount(email : string, password: string) {
-    this.fireauth.createUserWithEmailAndPassword(email, password).then(() => {
+  async createAccount(email : string, password: string) : Promise<string | null>{
+    return await this.fireauth.createUserWithEmailAndPassword(email, password).then((result : any) => {
       alert('register was succesfull')
-      this.router.navigate(['/']);
+      //this.router.navigate(['/']);
+      let user : User = result.user;
+      //console.log(user.uid);
+      return user.uid;
     }, err => {
       alert('something went wrong');
-      this.router.navigate(['/create-account']);
+      //this.router.navigate(['/create-account']);
+      return null;
     })
   }
 

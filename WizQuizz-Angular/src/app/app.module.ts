@@ -21,6 +21,8 @@ import { getStorage, provideStorage } from '@angular/fire/storage';
 import { AngularFireModule } from '@angular/fire/compat';
 import { environment } from '../environments/environments';
 
+import { AngularFireStorageModule } from '@angular/fire/compat/storage';
+
 
 
 
@@ -41,11 +43,12 @@ import { environment } from '../environments/environments';
     ReactiveFormsModule, 
     FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    AngularFireStorageModule
     //provideDatabase(() => getDatabase()),
-    //provideAuth(() => getAuth()),
-    //provideFirestore(() => getFirestore()),
-    //provideStorage(() => getStorage())
+    // provideAuth(() => getAuth()),
+    // provideFirestore(() => getFirestore()),
+    // provideStorage(() => getStorage())
   ],
   providers: [],
   bootstrap: [AppComponent]
