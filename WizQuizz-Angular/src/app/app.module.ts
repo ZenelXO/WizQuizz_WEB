@@ -20,6 +20,7 @@ import { getStorage, provideStorage } from '@angular/fire/storage';
 
 import { AngularFireModule } from '@angular/fire/compat';
 import { environment } from '../environments/environments';
+import { UserProfileComponent } from './user-profile/user-profile.component';
 
 import { AngularFireStorageModule } from '@angular/fire/compat/storage';
 
@@ -36,6 +37,7 @@ import { AngularFireStorageModule } from '@angular/fire/compat/storage';
     FooterComponent,
     SignInComponent,
     CreateAccountComponent,
+    UserProfileComponent,
   ],
   imports: [
     BrowserModule,

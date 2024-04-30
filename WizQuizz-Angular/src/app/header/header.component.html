@@ -6,12 +6,12 @@
   <div id="header-buttons">
     <a routerLink="/search"><input class="header-button" type="button" value="PLAY"></a>
     <a routerLink="/create"><input class="header-button" type="button" value="CREATE"></a>
-    <a routerLink="/sign-in" class="sign"><i class="fa fa-sign-in fa-3x" aria-hidden="true"></i></a>
+    <a [routerLink]="dynamicRouterLink" (click)="isSignedIn()" class="sign"><i class="fa fa-sign-in fa-3x" aria-hidden="true"></i></a>
     <a class="mobile-bars"><i class="fa fa-bars fa-3x" aria-hidden="true"></i></a>
   </div>
 </div>
 <ul class="mobile-menu hidden-menu">
   <li><a routerLink="/search">PLAY</a></li>
   <li><a routerLink="/create">CREATE</a></li>
-  <li><a routerLink="/sign-in">SIGN IN</a></li>
+  <li><a [routerLink]="dynamicRouterLink" (click)="isSignedIn()">SIGN IN</a></li>
 </ul>

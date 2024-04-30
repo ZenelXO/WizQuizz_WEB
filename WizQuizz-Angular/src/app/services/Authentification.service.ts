@@ -19,12 +19,12 @@ export class AuthentificationService implements OnInit{
 
 
   ngOnInit(): void {
-    localStorage.setItem("loggedIn", "false");
+    sessionStorage.setItem("loggedIn", "false");
   }
   
   login(email : string, password : string){
     this.fireauth.signInWithEmailAndPassword(email, password).then( () => {
-      localStorage.setItem('token', 'true');
+      sessionStorage.setItem('token', 'true');
       this.router.navigate(['/']);
     }, err => {
       alert('something went wrong');
@@ -48,7 +48,7 @@ export class AuthentificationService implements OnInit{
 
   logout() {
     this.fireauth.signOut().then(() => {
-      localStorage.removeItem('token');
+      sessionStorage.removeItem('token');
       this.router.navigate(['/']);
     }, err => {
       alert(err.message);
