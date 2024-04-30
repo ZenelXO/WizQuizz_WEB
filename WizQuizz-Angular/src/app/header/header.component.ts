@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -11,6 +12,7 @@ export class HeaderComponent implements OnInit{
 
   dynamicRouterLink: string = '/sign-in';
 
+  constructor(private router : Router) {}
   ngOnInit() {
     this.menuIcon = document.querySelector('.mobile-bars');
     this.mobileMenu = document.querySelector('.mobile-menu');
@@ -25,6 +27,10 @@ export class HeaderComponent implements OnInit{
   isSignedIn(){
     if (sessionStorage.getItem("token") === "true"){
       this.dynamicRouterLink = "user-profile";
+    } else {
+      this.dynamicRouterLink = "sign-in";
     }
+
+    this.router.navigate([this.dynamicRouterLink]);
   }
 }
