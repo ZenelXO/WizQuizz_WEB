@@ -1,0 +1,37 @@
+<main>
+    <div class="user-box">
+        <section class="main-user-info">
+
+            <div class="user-image-container">
+                <input type="image" id="user-image-button" src="../../assets/img/common/wizquizz-logo.png"/>
+                <input type="file" id="image-input-file" accept=".jpg, .jpeg, .png"/>
+            </div>
+            
+            <div class="nickname"><h1 id="username">USERNAME</h1></div>
+        </section>
+        
+        <section class="description">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, consequuntur aliquid? Mollitia, quo! Laboriosam a, autem eos ipsam sint vero, molestias doloribus in ex nemo non reprehenderit qui dolorum ut cumque cupiditate optio, veniam assumenda cum eum earum dignissimos nostrum. Obcaecati laboriosam iste tempora eos quos et natus amet nam!</p>
+        </section>
+        
+        <div class="additional-info">
+            <section class="account-creation-date">
+                <p>MEMBER SINCE 01 MAR 2024</p>
+            </section>
+
+            <section class="quizs-finished">
+                <a href="user-quizzes.html"><p class="quizzFinished">107 QUIZS FINISHED</p></a>
+            </section>
+        </div>
+            
+        <div class="configButtons">
+            <section class="sectionlogOut" id="log-out">
+                <input id="log-out" class="logOut" type="button" value="Log-Out" 
+                (click)="logOut()"
+                routerLink="">
+            </section>
+        </div>
+    </div>
+    <!-- <aside include-file="../../src/common/followers-sidebar.html" class = "sidebar"></aside> -->
+</main>
+
