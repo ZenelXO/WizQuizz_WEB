@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FirestoreService } from '../services/firestore.service';
 
 @Component({
   selector: 'app-user-profile',
@@ -8,5 +9,12 @@ import { Component } from '@angular/core';
 export class UserProfileComponent {
   logOut(){
     sessionStorage.setItem('token', 'false');
+  }
+
+  constructor(private firestore : FirestoreService) {}
+
+  ngOnInit(): void {
+    
+    
   }
 }

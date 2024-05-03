@@ -16,4 +16,8 @@ export class FirestoreService {
   addUser(user: User){
     this.userCollection.doc(user.uid).set(user);
   }
+
+  retrieveUser(uid : string){
+    
+  }
 }
