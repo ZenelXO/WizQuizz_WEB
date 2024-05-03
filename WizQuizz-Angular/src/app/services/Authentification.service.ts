@@ -2,7 +2,7 @@ import { Injectable, OnInit, inject } from '@angular/core';
 import firebase from "firebase/compat";
 import { AngularFireAuth } from "@angular/fire/compat/auth";
 import { Router } from "@angular/router";
-import { User } from '@angular/fire/auth';
+import { User, onAuthStateChanged } from '@angular/fire/auth';
 
 
 @Injectable({
@@ -20,6 +20,11 @@ export class AuthentificationService implements OnInit{
 
   ngOnInit(): void {
     sessionStorage.setItem("loggedIn", "false");
+    this.fireauth.authState.subscribe();
+  }
+
+  getAuthState(){
+    return this.fireauth.authState;
   }
   
   login(email : string, password : string){
@@ -54,4 +59,9 @@ export class AuthentificationService implements OnInit{
       alert(err.message);
     })
   }
+
+  authStatusListener(){
+    
+  }
+  
 }

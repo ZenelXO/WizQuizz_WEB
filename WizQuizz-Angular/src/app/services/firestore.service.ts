@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import {AngularFirestore, AngularFirestoreCollection} from '@angular/fire/compat/firestore'
 import { User } from '../data/interfaces';
+import { take } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -18,6 +19,8 @@ export class FirestoreService {
   }
 
   retrieveUser(uid : string){
-    
+    const itemDoc = this.firestore.doc<User>('users/' + uid);
+    let item = itemDoc.valueChanges().pipe(take(1));
+    return item;
   }
 }
