@@ -13,6 +13,8 @@ import { StorageService } from '../services/storage.service';
 export class CreateAccountComponent {
   email : string = '';
   password : string = '';
+  username: string = '';
+  confirmPassword: string = '';
 
   constructor(private auth : AuthentificationService, private firestore : FirestoreService, private storage : StorageService) {}
   
@@ -38,11 +40,12 @@ export class CreateAccountComponent {
     let authKey = await this.auth.createAccount(this.email, this.password);
     if(authKey !== null){
       let user : User = {
-        email: this.email,
-        password: this.password,
         uid: authKey,
-        imageUrl: '/assets/wizquizz-logo.png'
+        imageUrl: '/assets/wizquizz-logo.png',
+        description: "Hello this is a probisional description, you will be able to change it in next updates to further personalize your account.",
+        username: this.username
       }
+      console.log(user);
       this.firestore.addUser(user);
       this.storage.uploadFile("/assets/img/common/wizquizz-logo.png");
     }
@@ -51,5 +54,7 @@ export class CreateAccountComponent {
 
     this.email = '';
     this.password = '';
+    this.username = '';
+    this.confirmPassword = '';
   }
 }

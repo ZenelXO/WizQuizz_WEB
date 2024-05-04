@@ -7,7 +7,8 @@
             <div class="user-data" id="nickname-data">
                 <h2>In-game username</h2>
                 <input 
-                class="data-input" id="nickname-input" type="text" required>
+                class="data-input" id="nickname-input" type="text" required
+                name="username" [(ngModel)]="username">
             </div>
 
             <div class="user-data" id="email-data">
@@ -30,7 +31,8 @@
             <div class="user-data" id="confirm-password-data">
                 <h2>Confirm your password</h2>
                 <input formControlName="confirmPasswordInput"
-                class="data-input" id="confirm-password-input" type="password" required>
+                class="data-input" id="confirm-password-input" type="password" required
+                name="confirmPassword" [(ngModel)]="confirmPassword">
             </div>
             
             <div id="aviso" class="aviso"></div>

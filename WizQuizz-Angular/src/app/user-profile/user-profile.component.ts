@@ -10,17 +10,26 @@ import { Subscription } from 'rxjs';
   styleUrl: './user-profile.component.css'
 })
 export class UserProfileComponent {
-  private user : User | null = null;
+  private authUser : User | null = null;
   private observable : Subscription;
+  public username : string = "";
+  public description : string = "";
+
+
 
   constructor(private firestore : FirestoreService, private auth : AuthentificationService) {
     this.observable= this.auth.getAuthState().subscribe(result => {
-      this.user = result as User;
-      console.log(this.user);
+      this.authUser = result as User;
+      console.log(this.authUser);
       
-      if(this.user !== null) {
-        this.firestore.retrieveUser(this.user.uid).subscribe(result => {
+      if(this.authUser !== null) {
+        this.firestore.retrieveUser(this.authUser.uid).subscribe(result => {
           console.log(result);
+          if(result !== undefined){
+            this.username = result.username;
+            this.description = result.description;
+          }
+
         })
       }
 
