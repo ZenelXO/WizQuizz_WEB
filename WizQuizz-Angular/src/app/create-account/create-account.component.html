@@ -30,13 +30,14 @@
 
             <div class="user-data" id="confirm-password-data">
                 <h2>Confirm your password</h2>
-                <input formControlName="confirmPasswordInput"
+                <input
                 class="data-input" id="confirm-password-input" type="password" required
-                name="confirmPassword" [(ngModel)]="confirmPassword">
+                name="confirmPassword"
+                [(ngModel)]="confirmPassword">
             </div>
             
             <div id="aviso" class="aviso"></div>
-            <button type="button" class="create-account-button" (click)="register()">Log in</button>
+            <button type="button" id="create-account-button" (click)="register()">Create Account</button>
            
               
             <!-- <input class="create-account-button" id="create-account-button" type="submit" value="Create Account"/> -->

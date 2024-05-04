@@ -14,6 +14,8 @@ export class UserProfileComponent {
   private observable : Subscription;
   public username : string = "";
   public description : string = "";
+  public creationDate: string = "";
+  public quizzes: string = "";
 
 
 
@@ -28,6 +30,8 @@ export class UserProfileComponent {
           if(result !== undefined){
             this.username = result.username;
             this.description = result.description;
+            this.creationDate = "MEMBER SINCE " + result.creationDate;
+            this.quizzes = result.quizzes + "QUIZZES CREATED";
           }
 
         })
