@@ -8,6 +8,9 @@ import { CreateAccountComponent } from './create-account/create-account.componen
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { CreateQuizzComponent } from './create-quizz/create-quizz.component';
 import { CreateQuestionsComponent } from './create-questions/create-questions.component';
+import { InGameComponent } from './in-game/in-game.component';
+import { FinishQuizzComponent } from './finish-quizz/finish-quizz.component';
+
 
 const routes: Routes = [
   {
@@ -41,6 +44,15 @@ const routes: Routes = [
   {
     path: 'create-questions',
     component: CreateQuestionsComponent
+  },
+  {
+    path: 'in-game',
+    component: InGameComponent
+  },
+  {
+    path: 'finish-quizz',
+    component: FinishQuizzComponent
+
   }
 ];
 
