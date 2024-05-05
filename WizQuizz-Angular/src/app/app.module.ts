@@ -23,13 +23,10 @@ import { environment } from '../environments/environments';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 
 import { AngularFireStorageModule } from '@angular/fire/compat/storage';
-<<<<<<< HEAD
 import { CreateQuizzComponent } from './create-quizz/create-quizz.component';
 import { CreateQuestionsComponent } from './create-questions/create-questions.component';
-=======
 import { InGameComponent } from './in-game/in-game.component';
 import { FinishQuizzComponent } from './finish-quizz/finish-quizz.component';
->>>>>>> Itamar/Angular
 
 
 
@@ -45,13 +42,10 @@ import { FinishQuizzComponent } from './finish-quizz/finish-quizz.component';
     SignInComponent,
     CreateAccountComponent,
     UserProfileComponent,
-<<<<<<< HEAD
     CreateQuizzComponent,
     CreateQuestionsComponent,
-=======
     InGameComponent,
     FinishQuizzComponent,
->>>>>>> Itamar/Angular
   ],
   imports: [
     BrowserModule,
