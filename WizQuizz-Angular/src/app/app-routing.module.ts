@@ -6,6 +6,8 @@ import {PreviewComponent} from "./preview/preview.component";
 import { SignInComponent } from './sign-in/sign-in.component';
 import { CreateAccountComponent } from './create-account/create-account.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
+import { InGameComponent } from './in-game/in-game.component';
+import { FinishQuizzComponent } from './finish-quizz/finish-quizz.component';
 
 const routes: Routes = [
   {
@@ -31,6 +33,14 @@ const routes: Routes = [
   {
     path: 'user-profile',
     component: UserProfileComponent
+  },
+  {
+    path: 'in-game',
+    component: InGameComponent
+  },
+  {
+    path: 'finish-quizz',
+    component: FinishQuizzComponent
   }
 ];
 

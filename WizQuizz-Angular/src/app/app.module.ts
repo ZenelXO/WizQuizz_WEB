@@ -23,6 +23,8 @@ import { environment } from '../environments/environments';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 
 import { AngularFireStorageModule } from '@angular/fire/compat/storage';
+import { InGameComponent } from './in-game/in-game.component';
+import { FinishQuizzComponent } from './finish-quizz/finish-quizz.component';
 
 
 
@@ -38,6 +40,8 @@ import { AngularFireStorageModule } from '@angular/fire/compat/storage';
     SignInComponent,
     CreateAccountComponent,
     UserProfileComponent,
+    InGameComponent,
+    FinishQuizzComponent,
   ],
   imports: [
     BrowserModule,
