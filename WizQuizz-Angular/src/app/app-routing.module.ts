@@ -6,6 +6,8 @@ import {PreviewComponent} from "./preview/preview.component";
 import { SignInComponent } from './sign-in/sign-in.component';
 import { CreateAccountComponent } from './create-account/create-account.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
+import { CreateQuizzComponent } from './create-quizz/create-quizz.component';
+import { CreateQuestionsComponent } from './create-questions/create-questions.component';
 
 const routes: Routes = [
   {
@@ -31,6 +33,14 @@ const routes: Routes = [
   {
     path: 'user-profile',
     component: UserProfileComponent
+  },
+  {
+    path: 'create-quizz',
+    component: CreateQuizzComponent
+  },
+  {
+    path: 'create-questions',
+    component: CreateQuestionsComponent
   }
 ];
 
